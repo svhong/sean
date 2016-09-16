@@ -1,41 +1,111 @@
 body {
     height: 100vh;
     width: 100vw;
-    text-align: justify;
-    background-color: #2359FF;
-    font-size:0;
-    margin:0;
+    max-width: 100%;
+    background-color: #ECF0F1 !important;
+    font-family: 'Muli', SansSerif !important;
+
 }
 
-header  {
-    height: 10vh;
-    background: white;
-    font-size:initial;
-    opacity: .7;
+.navbar-custom {
+    background: #2c3e50;
+    opacity: 0.8;
 }
 
-.brand {
-    font-size:2em;
-    color:black;
+.navbar-custom .navbar-toggle {
+    background: #2c3e50;
+}
+
+.navbar-custom .navbar-brand {
+    color: #FFBD01;
+    position: absolute;
+}
+
+.navbar-custom .navbar-toggle > span {
+    background: #FFBD01;
+}
+
+.navbar-custom .navbar-nav li a {
+    color: #FFBD01;
+}
+
+.navbar-custom .navbar-nav {
     display: inline-block;
     position: relative;
-    top:50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
+    left:50%;
+    transform:translate(-50%);
 }
 
-.link_bar {
+.navbar-custom .navbar-collapse {
+    text-align: center;
+    height: 100%;
+}
+
+.navbar-custom .navbar-nav li a:hover {
+    background: #2c3e50;
+}
+
+.navbar-custom .navbar-nav li a:active {
+    background: #2c3e50;
+}
+
+.navbar-custom .navbar-nav li a:visited {
+    background: #2c3e50;
+}
+
+/*.icon_container{*/
+    /*display: inline-block;*/
+    /*position: relative;*/
+    /*left:50%;*/
+    /*-webkit-transform: translate(-50%);*/
+    /*-moz-transform: translate(-50%);*/
+    /*-ms-transform: translate(-50%);*/
+    /*-o-transform: translate(-50%);*/
+    /*transform: translate(-50%);*/
+/*}*/
+
+@media screen and (max-width: 768px) {
+    .navbar-custom .navbar-nav {
+        left:10%;
+    }
+}
+
+#main {
+    border:1px solid #FFBD01;
+
+    color: red;
     display: inline-block;
+    box-sizing: border-box;
     position: relative;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+    width: 90%;
+    height: 100%;
+    text-align: center;
 }
 
-.link_bar > div {
-    display: inline-block;
+.div1 {
+    height:90%;
     background: red;
-    color: black;
-    font-size:initial;
-    position: relative;
+    margin-top:65px;
+}
+
+.div2 {
+    height:90%;
+    background: blue;
+    margin-top: 65px;
+}
+.div3 {
+    height:90%;
+    background: yellow;
+    margin-top: 65px;
+}
+.div4 {
+    height:90%;
+    background: deeppink;
+    margin-top: 65px;
 }
