@@ -64,18 +64,11 @@ body {
     /*transform: translate(-50%);*/
 /*}*/
 
-@media screen and (max-width: 768px) {
-    .navbar-custom .navbar-nav {
-        left:10%;
-    }
-}
+
 
 #main {
-    border:1px solid #FFBD01;
-
-    color: red;
+    color: #2c3e50;
     display: inline-block;
-    box-sizing: border-box;
     position: relative;
     left: 50%;
     -webkit-transform: translate(-50%);
@@ -85,13 +78,44 @@ body {
     transform: translate(-50%);
     width: 90%;
     height: 100%;
-    text-align: center;
 }
 
 .div1 {
     height:90%;
-    background: red;
     margin-top:65px;
+}
+
+.div1 > h1 {
+    text-decoration: underline;
+    text-align: center;
+}
+.about_me_content {
+    height: 100%;
+    width: 100%;
+}
+
+.pic_container{
+    margin: 0;
+    font-size:0;
+    height: 40%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+.pic_container > img {
+    height: 100%;
+    max-width: 30%;
+}
+
+.pic_container > img:nth-child(2){
+    margin: 0 5% 0 5%;
+}
+
+
+.about_me_content > p {
+    text-align: justify;
+    color: #FFBD01;
+    background: #2c3e50 ;
+    text-indent: 1em;
 }
 
 .div2 {
@@ -108,4 +132,54 @@ body {
     height:90%;
     background: deeppink;
     margin-top: 65px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-custom .navbar-nav {
+        left:10%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .about_me_content > p {
+        height:120px;
+        width:500px;
+        color: #FFBD01;
+        background: #2c3e50 ;
+        text-indent: 1em;
+        position: relative;
+        left: 50%;
+        margin-top:7%;
+        -webkit-transform: translate(-50%);
+        -moz-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+        -o-transform: translate(-50%);
+        transform: translate(-50%);
+        
+    }
+    .pic_container{
+        margin: 0;
+        font-size:0;
+        height: 40%;
+        margin-bottom: 1%;
+        margin-top: 5%;
+        text-align: center;
+    }
+}
+@media all and (orientation:portrait) {
+    .pic_container{
+        margin: 0;
+        font-size:0;
+        height: 40%;
+        margin-bottom: 10%;
+        text-align: center;
+    }
+
+    .pic_container{
+        font-size:0;
+        height: 45%;
+        margin-bottom: 5%;
+        margin-top: 10%;
+        text-align: center;
+    }
 }
