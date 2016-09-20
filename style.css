@@ -7,6 +7,22 @@ body {
 
 }
 
+#main {
+    color: #2c3e50;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+    width: 90%;
+    height: 100%;
+}
+
+/************************************CUSTOM NAVBAR CSS**************************************/
+
 .navbar-custom {
     background: #2c3e50;
     opacity: 0.8;
@@ -53,33 +69,10 @@ body {
     background: #2c3e50;
 }
 
-/*.icon_container{*/
-    /*display: inline-block;*/
-    /*position: relative;*/
-    /*left:50%;*/
-    /*-webkit-transform: translate(-50%);*/
-    /*-moz-transform: translate(-50%);*/
-    /*-ms-transform: translate(-50%);*/
-    /*-o-transform: translate(-50%);*/
-    /*transform: translate(-50%);*/
-/*}*/
 
 
 
-#main {
-    color: #2c3e50;
-    display: inline-block;
-    position: relative;
-    left: 50%;
-    -webkit-transform: translate(-50%);
-    -moz-transform: translate(-50%);
-    -ms-transform: translate(-50%);
-    -o-transform: translate(-50%);
-    transform: translate(-50%);
-    width: 90%;
-    height: 100%;
-}
-
+/*************************** HOME / ABOUT ME LINK CSS********************************************/
 .div1 {
     height:90%;
     margin-top:65px;
@@ -118,22 +111,151 @@ body {
     text-indent: 1em;
 }
 
+/***************************SKILLS LINK CSS********************************************/
 .div2 {
     height:90%;
-    background: blue;
     margin-top: 65px;
 }
+
+.skills_container{
+    margin: 1% 0 0 5%;
+    height: 27%;
+    width: 27%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    color: #FFBD01;
+    background: #2c3e50;
+}
+
+.skill_desc {
+    height: 10%;
+    margin: 4% 0;
+}
+
+.skill_pic_container {
+    height:45%;
+    margin:auto;
+}
+
+.skill_pic_container > img {
+    height: 100%;
+}
+
+.meter {
+    border: 1px solid #FFBD01;
+    height:25px;
+    background: #2c3e50;
+    width:100%;
+    position: relative;
+    bottom: 7%;
+    margin-top: 5%;
+}
+
+.num_block {
+    position: absolute;
+    right: 0;
+    width: 10%;
+    height: 100%;
+    font-size: 1.5em;
+    animation: fade_in 6s;
+}
+
+.bar {
+    height: 10px;
+    position: relative;
+    background: #FFBD01;
+    animation: bar_fill 3.5s;
+}
+
+/************************************METER BAR CSS*****************************************/
+.javascript {
+    width: 90%;
+    height: 10px;
+    position: absolute;
+    top:30%;
+}
+
+.jquery {
+    width: 90%;
+    height: 10px;
+    position: absolute;
+    top:30%;
+}
+.html {
+    width: 90%;
+    height: 10px;
+    position: absolute;
+    top:30%;
+}
+.css {
+    width: 90%;
+    height: 10px;
+    position: absolute;
+    top:30%;
+}
+.git {
+    width: 80%;
+    height: 10px;
+    position: absolute;
+    top:30%;
+}
+.angular {
+    width: 65%;
+    height: 10px;
+    position: absolute;
+    top:30%;
+}
+.bootstrap {
+    width: 80%;
+    height: 10px;
+    position: absolute;
+    top:30%;
+}
+.oop {
+    width: 80%;
+    height: 10px;
+    position: absolute;
+    top:30%;
+}
+.php {
+    width: 70%;
+    height: 10px;
+    position: absolute;
+    top:30%;
+}
+/***************************APPLICATIONS LINK CSS********************************************/
 .div3 {
     height:90%;
     background: yellow;
     margin-top: 65px;
 }
+
+/***************************CONTACT ME LINK CSS********************************************/
+
 .div4 {
     height:90%;
     background: deeppink;
     margin-top: 65px;
 }
 
+/*****************************************CSS ANIMATIONS****************************************************/
+@keyframes bar_fill {
+    from {
+        width:0;}
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes fade_in {
+    from {
+        opacity: 0;
+    } to{
+        opacity: 1;
+          }
+}
+/***************************MEDIA QUERIES FOR MOBILE OPTIMIZATION********************************************/
 @media screen and (max-width: 768px) {
     .navbar-custom .navbar-nav {
         left:10%;
@@ -182,4 +304,28 @@ body {
         margin-top: 10%;
         text-align: center;
     }
+
+    .skills_container {
+        margin-left: 2%;
+        height: 19%;
+        width: 45%;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        color: #FFBD01;
+    }
+
+    .navbar-custom .navbar-nav {
+        left:15%;
+    }
+
+    .num_block {
+        position: absolute;
+        right: 0;
+        width: 10%;
+        height: 100%;
+        font-size: 1.5em;
+        animation: fade_in 4s;
+    }
 }
+

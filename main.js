@@ -14,12 +14,10 @@ $(document).ready(function(){
         });
     });
     $('.navbar-nav a').on('click', function(){
-       console.log('this is what was clicked on: ', this.getAttribute('class'));
         var eq_value = this.getAttribute('class');
         var dom_to_scroll_to = $('.pages').eq(eq_value).offset().top - 65;
-        var current_position = dom_to_scroll_to;
+        c = eq_value;
         $('body').animate({scrollTop: dom_to_scroll_to}, 650);
     })
 });
-
 
