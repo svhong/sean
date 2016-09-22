@@ -79,7 +79,6 @@ body {
 }
 
 .div1 > h1 {
-    text-decoration: underline;
     text-align: center;
 }
 .about_me_content {
@@ -124,8 +123,8 @@ body {
     position: relative;
     display: inline-block;
     text-align: center;
-    color: #FFBD01;
-    background: #2c3e50;
+    color: #2c3e50;
+    font-weight: bold;
 }
 
 .skill_desc {
@@ -157,7 +156,7 @@ body {
     right: 0;
     width: 10%;
     height: 100%;
-    font-size: 1.5em;
+    font-size: 1.3em;
     animation: fade_in 6s;
 }
 
@@ -165,7 +164,16 @@ body {
     height: 10px;
     position: relative;
     background: #FFBD01;
-    animation: bar_fill 3.5s;
+}
+
+.animate_bar {
+    -webkit-animation:bar_fill 2s ease-out;
+    -o-animation:bar_fill 2s ease-out;
+    animation:bar_fill 2s ease-out;
+}
+
+.num_block {
+    color: #FFBD01;
 }
 
 /************************************METER BAR CSS*****************************************/
@@ -174,6 +182,7 @@ body {
     height: 10px;
     position: absolute;
     top:30%;
+    left:1%;
 }
 
 .jquery {
@@ -181,56 +190,81 @@ body {
     height: 10px;
     position: absolute;
     top:30%;
+    left:1%;
 }
 .html {
     width: 90%;
     height: 10px;
     position: absolute;
     top:30%;
+    left:1%;
 }
 .css {
     width: 90%;
     height: 10px;
     position: absolute;
     top:30%;
+    left:1%;
 }
 .git {
     width: 80%;
     height: 10px;
     position: absolute;
     top:30%;
+    left:1%;
 }
 .angular {
-    width: 65%;
+    width: 70%;
     height: 10px;
     position: absolute;
     top:30%;
+    left:1%;
 }
 .bootstrap {
     width: 80%;
     height: 10px;
     position: absolute;
     top:30%;
+    left:1%;
 }
 .oop {
     width: 80%;
     height: 10px;
     position: absolute;
     top:30%;
+    left:1%;
 }
 .php {
     width: 70%;
     height: 10px;
     position: absolute;
     top:30%;
+    left:1%;
 }
 /***************************APPLICATIONS LINK CSS********************************************/
 .div3 {
     height:90%;
-    background: yellow;
     margin-top: 65px;
+    text-align: center;
 }
 
+.app {
+    display: inline-block;
+    height:30%;
+    width: 30%;
+}
+.app > img {
+    height:70%;
+    max-width:90%;
+}
+
+.links a,p {
+    display: inline-block;
+}
+
+.app > h5 {
+    font-weight: bold;
+}
 /***************************CONTACT ME LINK CSS********************************************/
 
 .div4 {
@@ -287,6 +321,18 @@ body {
         margin-top: 5%;
         text-align: center;
     }
+    .app:nth-child(3n+0) {
+        margin: 0 2% 0 2%;
+    }
+
+    .app {
+        display: inline-block;
+        height:30%;
+        width:30%;
+        margin-top: 7%;
+    }
+
+
 }
 @media all and (orientation:portrait) {
     .pic_container{
@@ -312,7 +358,7 @@ body {
         position: relative;
         display: inline-block;
         text-align: center;
-        color: #FFBD01;
+        color: #2c3e50;
     }
 
     .navbar-custom .navbar-nav {
@@ -326,6 +372,13 @@ body {
         height: 100%;
         font-size: 1.5em;
         animation: fade_in 4s;
+    }
+
+    .app {
+        display: inline-block;
+        height:25%;
+        width:45%;
+        margin-top: 5%;
     }
 }
 

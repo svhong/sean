@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+</head>
+<body>
+	<form method="post" action="mail_handler.php">
+		<input id="name" name="name" placeholder="your name"><br>
+		<input id="email" name="email" placeholder="your email address"><br>
+		<input id="subject" name="subject" placeholder="Subject"><br>
+		<textarea id="body" name="body">
+		</textarea><br>
+	</form>
+	<button type="button" name="submit" value="submit" onclick="sendMail()">Send Mail</button>
+</body>
+<script>
+	function sendMail(){
+		$.ajax({
+			url: 'mail_handler.php',
+			type: 'post',
+			dataType:'text',
+			data:{
+				'From': $('#email').val(),
+				'FromName': $('#name').val(),
+				'Subject': $('#subject').val(),
+				'Body': $('#body').val()
+			},
+			success: function(){
+				console.log('email has been sent');
+			}
+		});
+	}
+</script>
+</html>
