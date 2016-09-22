@@ -7,58 +7,215 @@
     <meta name="author" content="Sean Hong">
     <meta name="viewport" content="initial-scale=1, user-scalable=no">
     <title>Developer Sean Hong</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="jquery.mobile.custom.min.js"></script>
     <script src="main.js"></script>
 </head>
 <body>
 <!-------------------------------------------navigator bar------------------------------------->
-<nav class="nav navbar-custom navbar-fixed-top">
+<nav class="nav navbar-custom navbar-fixed-top" id="navibar">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#toggleCollapse" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigationbar" aria-expanded="false">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="#">Sean Hong Developer</a>
     </div>
-    <div class="collapse navbar-collapse" id="toggleCollapse">
+    <div class="collapse navbar-collapse" id="navigationbar">
         <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Stuff</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Contact Me</a></li>
+            <li><a href="#home" class="0">Home</a></li>
+            <li><a href="#skills" class="1">Skills</a></li>
+            <li><a href="#applications" class="2">Applications</a></li>
+            <li><a href="#contact" class="3">Contact</a></li>
         </ul>
     </div>
 </nav>
-<!----------------------------------------Main Content--------------------------------------->
-<div id="bossContainer">
-<section id="home">
-    <div>
-        UNDER CONSTRUCTION!
+<div id="main">
+    <div class="pages div1">
+        <h1>About me</h1>
+        <div class="about_me_content">
+            <div class="pic_container">
+                <img src="images/lala.jpg">
+                <img src="images/familypic.jpg">
+                <img src="images/saiyen.jpg">
+            </div>
+            <p>Hello! My name is Sean Hong. A little bit about myself I am a father to 3 beautiful girls and I love programming! I have pursued many different things in life, but nothing has my passion burning like coding! Originally from Hawaii, my family and I reside in Orange County! I love martial arts, hiking, riding my motorcycle, grilling poolside, and creating JavaScript functions! Use the Contact me area to say hi!</p>
+        </div>
     </div>
-</section>
-<section id="projects">
-    <h2>Projects</h2>
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi aut debitis dolorem error exercitationem iusto magni natus nemo odio porro, quasi recusandae sunt ullam ut, vero vitae voluptate. Accusamus accusantium amet animi architecto assumenda debitis dignissimos, est eveniet excepturi, exercitationem expedita fuga fugit inventore ipsa ipsum laborum modi obcaecati praesentium quam quas quia quis sint soluta veniam veritatis? Ab aperiam asperiores deserunt dignissimos distinctio ea eos eveniet explicabo facilis hic id inventore magni maiores minima modi optio, perferendis porro quaerat recusandae rem sint vel veniam! Aliquid ea impedit iure minima quo recusandae repudiandae saepe sit soluta veritatis. Excepturi, rem?</div>
-</section>
-<section id="stuff">
-    <h2>Stuff</h2>
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium debitis pariatur quam velit. Consequuntur culpa, cumque dolore doloribus eveniet minus natus nesciunt nisi numquam omnis perferendis rerum suscipit voluptates voluptatibus.</div>
-</section>
-<section id="aboutMe">
-    <h2>About Me</h2>
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto assumenda explicabo illum ipsum, labore, numquam, optio quis repellendus reprehenderit rerum sapiente soluta vel vitae? Adipisci commodi eaque molestias nam nesciunt omnis repudiandae tempora? A accusantium amet architecto consequuntur eligendi in iste minima neque, obcaecati pariatur praesentium quia veniam veritatis voluptatem voluptatum! Aspernatur at fugiat illum inventore itaque pariatur quaerat tempore.</div>
-</section>
-<section id="contactMe">
-    <h2>Contact Me</h2>
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cupiditate doloribus eos exercitationem iusto magnam nihil perferendis provident veniam? Ipsa, necessitatibus, quisquam. A accusamus debitis dolores eligendi enim error illum maiores necessitatibus nisi obcaecati praesentium quidem suscipit tempore, unde veniam.</div>
-</section>
+    <div class="pages div2">
+        <div class="skills_container">
+            <div class="skill_desc">JavaScript</div>
+            <div class="skill_pic_container">
+                <img src="images/javascript.png">
+            </div>
+            <div class="meter">
+                <div class="num_block">9</div>
+                <div class="javascript">
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="skills_container">
+            <div class="skill_desc">jQuery</div>
+            <div class="skill_pic_container">
+                <img src="images/jquery.png">
+            </div>
+            <div class="meter">
+                <div class="num_block">9</div>
+                <div class="jquery">
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="skills_container">
+            <div class="skill_desc">HTML5</div>
+            <div class="skill_pic_container">
+                <img src="images/html5.png">
+            </div>
+            <div class="meter">
+                <div class="num_block">9</div>
+                <div class="html">
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="skills_container">
+            <div class="skill_desc">CSS3</div>
+            <div class="skill_pic_container">
+                <img src="images/css.png">
+            </div>
+            <div class="meter">
+                <div class="num_block">9</div>
+                <div class="css">
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="skills_container">
+            <div class="skill_desc">Git</div>
+            <div class="skill_pic_container">
+                <img src="images/git.png">
+            </div>
+            <div class="meter">
+                <div class="num_block">8</div>
+                <div class="git">
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="skills_container">
+            <div class="skill_desc">Angular.JS</div>
+            <div class="skill_pic_container">
+                <img src="images/angular.png">
+            </div>
+            <div class="meter">
+                <div class="num_block">7</div>
+                <div class="angular">
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="skills_container">
+            <div class="skill_desc">Bootstrap</div>
+            <div class="skill_pic_container">
+                <img src="images/bootstrap.png">
+            </div>
+            <div class="meter">
+                <div class="num_block">9</div>
+                <div class="bootstrap">
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="skills_container">
+            <div class="skill_desc">Object Oriented</div>
+            <div class="skill_pic_container">
+                <img src="images/oop.png">
+            </div>
+            <div class="meter">
+                <div class="num_block">8</div>
+                <div class="oop">
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="skills_container">
+            <div class="skill_desc">PHP</div>
+            <div class="skill_pic_container">
+                <img src="images/php.png">
+            </div>
+            <div class="meter">
+                <div class="num_block">7</div>
+                <div class="php">
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pages div3">
+        <h1>My Applications</h1>
+            <div class="app">
+                <h5>Memory Match</h5>
+            <img src="images/bttf.jpg" alt="Memory Match Picture">
+            <div class="links">
+                <a href="">Live Demo</a>
+                <p>|</p>
+                <a href="">GitHub</a>
+            </div>
+        </div>
+        <div class="app">
+            <h5>Calculator</h5>
+            <img src="images/calc.jpg" alt="Calculator Image">
+            <div class="links">
+                <a href="">Live Demo</a>
+                <p>|</p>
+                <a href="">GitHub</a>
+            </div>
+        </div>
+        <div class="app">
+            <h5>JS Snippets</h5>
+            <img src="images/bttf.jpg" alt="JavaScript Image">
+            <div class="links">
+                <a href="">Live Demo</a>
+                <p>|</p>
+                <a href="">GitHub</a>
+            </div>
+        </div>
+        <div class="app">
+            <h5>Blind Date</h5>
+            <img src="images/blinddate.jpg" alt="Blind Date Image">
+            <div class="links">
+                <a href="">Live Demo</a>
+                <p>|</p>
+                <a href="">GitHub</a>
+            </div>
+        </div>
+        <div class="app">
+            <h5>Student Grade Table</h5>
+            <img src="images/sgt.jpg" alt="SGT Image">
+            <div class="links">
+                <a href="">Live Demo</a>
+                <p>|</p>
+                <a href="">GitHub</a>
+            </div>
+        </div>
+        <div class="app">
+            <h5>Tic-Tac-Toe</h5>
+            <img src="images/ttt.jpg" alt="Tic-Tac-Toe Image">
+            <div class="links">
+                <a href="">Live Demo</a>
+                <p>|</p>
+                <a href="">GitHub</a>
+            </div>
+        </div>
+    </div>
+    <div class="pages div4">4th Page Scroll</div>
 </div>
 </body>
 </html>

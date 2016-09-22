@@ -1,33 +1,384 @@
 body {
     height: 100vh;
-    width: 98vw;
-    padding-top: 70px;
-    text-align: justify;
+    width: 100vw;
+    max-width: 100%;
+    background-color: #ECF0F1 !important;
+    font-family: 'Muli', SansSerif !important;
 
 }
 
-#bossContainer {
-    height: 100%;
-    width: 80%;
-    left: 50%;
+#main {
+    color: #2c3e50;
     display: inline-block;
     position: relative;
+    left: 50%;
     -webkit-transform: translate(-50%);
     -moz-transform: translate(-50%);
     -ms-transform: translate(-50%);
     -o-transform: translate(-50%);
     transform: translate(-50%);
+    width: 90%;
+    height: 100%;
 }
-/*NAVBAR CSS*/
+
+/************************************CUSTOM NAVBAR CSS**************************************/
+
 .navbar-custom {
-    background-color: #000000;
+    background: #2c3e50;
+    opacity: 0.8;
 }
-.navbar-custom .navbar-brand{
-    color: deeppink;
+
+.navbar-custom .navbar-toggle {
+    background: #2c3e50;
 }
-/* DELETE LATER ONLY USING FOR EXAMPLE*/
- section {
-    border:2px red solid;
-     height: 100%;
-     width: 100%;
+
+.navbar-custom .navbar-brand {
+    color: #FFBD01;
+    position: absolute;
 }
+
+.navbar-custom .navbar-toggle > span {
+    background: #FFBD01;
+}
+
+.navbar-custom .navbar-nav li a {
+    color: #FFBD01;
+}
+
+.navbar-custom .navbar-nav {
+    display: inline-block;
+    position: relative;
+    left:50%;
+    transform:translate(-50%);
+}
+
+.navbar-custom .navbar-collapse {
+    text-align: center;
+    height: 100%;
+}
+
+.navbar-custom .navbar-nav li a:hover {
+    background: #2c3e50;
+}
+
+.navbar-custom .navbar-nav li a:active {
+    background: #2c3e50;
+}
+
+.navbar-custom .navbar-nav li a:visited {
+    background: #2c3e50;
+}
+
+
+
+
+/*************************** HOME / ABOUT ME LINK CSS********************************************/
+.div1 {
+    height:90%;
+    margin-top:65px;
+}
+
+.div1 > h1 {
+    text-align: center;
+}
+.about_me_content {
+    height: 100%;
+    width: 100%;
+}
+
+.pic_container{
+    margin: 0;
+    font-size:0;
+    height: 40%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+.pic_container > img {
+    height: 100%;
+    max-width: 30%;
+}
+
+.pic_container > img:nth-child(2){
+    margin: 0 5% 0 5%;
+}
+
+
+.about_me_content > p {
+    text-align: justify;
+    color: #FFBD01;
+    background: #2c3e50 ;
+    text-indent: 1em;
+}
+
+/***************************SKILLS LINK CSS********************************************/
+.div2 {
+    height:90%;
+    margin-top: 65px;
+}
+
+.skills_container{
+    margin: 1% 0 0 5%;
+    height: 27%;
+    width: 27%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.skill_desc {
+    height: 10%;
+    margin: 4% 0;
+}
+
+.skill_pic_container {
+    height:45%;
+    margin:auto;
+}
+
+.skill_pic_container > img {
+    height: 100%;
+}
+
+.meter {
+    border: 1px solid #FFBD01;
+    height:25px;
+    background: #2c3e50;
+    width:100%;
+    position: relative;
+    bottom: 7%;
+    margin-top: 5%;
+}
+
+.num_block {
+    position: absolute;
+    right: 0;
+    width: 10%;
+    height: 100%;
+    font-size: 1.3em;
+    animation: fade_in 6s;
+}
+
+.bar {
+    height: 10px;
+    position: relative;
+    background: #FFBD01;
+}
+
+.animate_bar {
+    -webkit-animation:bar_fill 2s ease-out;
+    -o-animation:bar_fill 2s ease-out;
+    animation:bar_fill 2s ease-out;
+}
+
+.num_block {
+    color: #FFBD01;
+}
+
+/************************************METER BAR CSS*****************************************/
+.javascript {
+    width: 90%;
+    height: 10px;
+    position: absolute;
+    top:30%;
+    left:1%;
+}
+
+.jquery {
+    width: 90%;
+    height: 10px;
+    position: absolute;
+    top:30%;
+    left:1%;
+}
+.html {
+    width: 90%;
+    height: 10px;
+    position: absolute;
+    top:30%;
+    left:1%;
+}
+.css {
+    width: 90%;
+    height: 10px;
+    position: absolute;
+    top:30%;
+    left:1%;
+}
+.git {
+    width: 80%;
+    height: 10px;
+    position: absolute;
+    top:30%;
+    left:1%;
+}
+.angular {
+    width: 70%;
+    height: 10px;
+    position: absolute;
+    top:30%;
+    left:1%;
+}
+.bootstrap {
+    width: 80%;
+    height: 10px;
+    position: absolute;
+    top:30%;
+    left:1%;
+}
+.oop {
+    width: 80%;
+    height: 10px;
+    position: absolute;
+    top:30%;
+    left:1%;
+}
+.php {
+    width: 70%;
+    height: 10px;
+    position: absolute;
+    top:30%;
+    left:1%;
+}
+/***************************APPLICATIONS LINK CSS********************************************/
+.div3 {
+    height:90%;
+    margin-top: 65px;
+    text-align: center;
+}
+
+.app {
+    display: inline-block;
+    height:30%;
+    width: 30%;
+}
+.app > img {
+    height:70%;
+    max-width:90%;
+}
+
+.links a,p {
+    display: inline-block;
+}
+
+.app > h5 {
+    font-weight: bold;
+}
+/***************************CONTACT ME LINK CSS********************************************/
+
+.div4 {
+    height:90%;
+    background: deeppink;
+    margin-top: 65px;
+}
+
+/*****************************************CSS ANIMATIONS****************************************************/
+@keyframes bar_fill {
+    from {
+        width:0;}
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes fade_in {
+    from {
+        opacity: 0;
+    } to{
+        opacity: 1;
+          }
+}
+/***************************MEDIA QUERIES FOR MOBILE OPTIMIZATION********************************************/
+@media screen and (max-width: 768px) {
+    .navbar-custom .navbar-nav {
+        left:10%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .about_me_content > p {
+        height:120px;
+        width:500px;
+        color: #FFBD01;
+        background: #2c3e50 ;
+        text-indent: 1em;
+        position: relative;
+        left: 50%;
+        margin-top:7%;
+        -webkit-transform: translate(-50%);
+        -moz-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+        -o-transform: translate(-50%);
+        transform: translate(-50%);
+        
+    }
+    .pic_container{
+        margin: 0;
+        font-size:0;
+        height: 40%;
+        margin-bottom: 1%;
+        margin-top: 5%;
+        text-align: center;
+    }
+    .app:nth-child(3n+0) {
+        margin: 0 2% 0 2%;
+    }
+
+    .app {
+        display: inline-block;
+        height:30%;
+        width:30%;
+        margin-top: 7%;
+    }
+
+
+}
+@media all and (orientation:portrait) {
+    .pic_container{
+        margin: 0;
+        font-size:0;
+        height: 40%;
+        margin-bottom: 10%;
+        text-align: center;
+    }
+
+    .pic_container{
+        font-size:0;
+        height: 45%;
+        margin-bottom: 5%;
+        margin-top: 10%;
+        text-align: center;
+    }
+
+    .skills_container {
+        margin-left: 2%;
+        height: 19%;
+        width: 45%;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        color: #2c3e50;
+    }
+
+    .navbar-custom .navbar-nav {
+        left:15%;
+    }
+
+    .num_block {
+        position: absolute;
+        right: 0;
+        width: 10%;
+        height: 100%;
+        font-size: 1.5em;
+        animation: fade_in 4s;
+    }
+
+    .app {
+        display: inline-block;
+        height:25%;
+        width:45%;
+        margin-top: 5%;
+    }
+}
+
