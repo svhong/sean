@@ -271,8 +271,34 @@ body {
     height:90%;
     background: deeppink;
     margin-top: 65px;
+    text-align: center;
+}
+.input_field {
+    height:50%;
+    width:50%;
+    background: green;
+    text-align: left;
 }
 
+#char_remaining {
+    font-size:1em;
+    font-weight: bold;
+    height: 3%;
+    display: inline-block;
+}
+
+form > input {
+    margin: 1% 0 1% 0;
+    width: 40%;
+}
+
+#body {
+    display: inline-block;
+    width: 60%;
+    resize: none;
+    outline: none;
+
+}
 /*****************************************CSS ANIMATIONS****************************************************/
 @keyframes bar_fill {
     from {

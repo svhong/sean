@@ -215,7 +215,24 @@
             </div>
         </div>
     </div>
-    <div class="pages div4">4th Page Scroll</div>
+    <div class="pages div4">
+        <h1>Contact Me</h1>
+        <div class="contact_message">
+            I'm always looking for new opportunities to learn, contribute, and accomplish!
+        </div>
+        <div class="input_field">
+            <form method="post" action="mail_handler.php">
+                <input id="name" name="name" placeholder="Your name">
+                <br>
+                <input id="email" name="email" placeholder="Your email address">
+                <br>
+                <input id="subject" name="subject" placeholder="Subject">
+                <br>
+                <textarea id="body" name="body" maxlength="500" rows="5" placeholder="Enter your message!"></textarea><div id="char_remaining">500 Characters Remaining</div>
+            </form>
+            <button class="btn btn-default" type="button" name="submit" value="submit">Send Mail</button>
+        </div>
+    </div>
 </div>
 </body>
 </html>
