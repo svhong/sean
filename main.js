@@ -27,4 +27,36 @@ $(document).ready(function(){
             $('.bar').removeClass('animate_bar');
         }
     });
+    var max_length_for_textarea = 500;
+
+    $('#body').keyup(function(){
+        console.log('you are typing and its registering');
+
+        var length = $(this).val().length;
+        var remaining_length = max_length_for_textarea - length;
+        $('#char_remaining').text(remaining_length + ' Characters Remaining');
+    });
 });
+function sendMail(){
+    $.ajax({
+        url: 'mail_handler.php',
+        type: 'post',
+        dataType:'text',
+        data:{
+            'From': $('#email').val(),
+            'FromName': $('#name').val(),
+            'Subject': $('#subject').val(),
+            'Body': $('#body').val()
+        },
+        success: function(){
+            console.log('email has been sent');
+        }
+    });
+}
+
+function clear_input(){
+    $('#email').text('');
+    $('#name').text('');
+    $('#subject').text('');
+    $('#body').text('');
+}
