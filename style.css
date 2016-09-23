@@ -278,13 +278,24 @@ body {
     width:50%;
     background: green;
     text-align: left;
+    display: inline-block;
+}
+
+.div4 h3 {
+    text-align: center;
 }
 
 #char_remaining {
     font-size:1em;
     font-weight: bold;
     height: 3%;
-    display: inline-block;
+}
+
+.form_container {
+    background: blue;
+    height: 90%;
+    width: 80%;
+    margin:auto;
 }
 
 form > input {
@@ -293,11 +304,33 @@ form > input {
 }
 
 #body {
-    display: inline-block;
     width: 60%;
     resize: none;
     outline: none;
+}
 
+.contact_message {
+    display: inline-block;
+    width:35%;
+    vertical-align: top;
+    background: yellow;
+    margin-right: 2%;
+
+}
+
+.contact_message > h3 {
+    text-align: center;
+}
+
+.contact_message > p {
+    text-align: justify;
+    text-indent: 1em;
+}
+
+#char_remaining > .btn {
+    background: #2c3e50;
+    color: #FFBD01;
+    border:none;
 }
 /*****************************************CSS ANIMATIONS****************************************************/
 @keyframes bar_fill {
@@ -355,7 +388,7 @@ form > input {
         display: inline-block;
         height:30%;
         width:30%;
-        margin-top: 7%;
+        margin-top: 5%;
     }
 
 
