@@ -36,8 +36,12 @@ $(document).ready(function(){
         var remaining_length = max_length_for_textarea - length;
         $('#char_remaining').text(remaining_length + ' Characters Remaining');
     });
+    $('#send_mail_button').on('click', function(){
+        send_mail();
+        clear_input();
+    })
 });
-function sendMail(){
+function send_mail(){
     $.ajax({
         url: 'mail_handler.php',
         type: 'post',
@@ -55,8 +59,9 @@ function sendMail(){
 }
 
 function clear_input(){
-    $('#email').text('');
-    $('#name').text('');
-    $('#subject').text('');
-    $('#body').text('');
+    console.log('clearing input fields');
+    $('#email').val('');
+    $('#name').val('');
+    $('#subject').val('');
+    $('#body').val('');
 }

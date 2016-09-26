@@ -219,11 +219,11 @@
         <h1>Contact Me</h1>
         <div class="form_container">
             <div class="contact_message">
-                <h3>What can I do for you?</h3>
+                <h4>What can I do for you?</h4>
                 <p>I'm always looking for new opportunities to learn, contribute, and accomplish! I would love to talk about how I can contribute to your personal or business projects. If you have any questions, comments, concerns, or just want to say hi, please use the form to send me a message!</p>
             </div>
             <div class="input_field">
-                <h3>General Inquiries</h3>
+                <h4>General Inquiries</h4>
                 <form method="post" action="mail_handler.php">
                     <input id="name" name="name" placeholder="Your name">YOUR NAME
                     <br>
@@ -231,11 +231,10 @@
                     <br>
                     <input id="subject" name="subject" placeholder="Subject">SUBJECT
                     <br>
-                    <textarea id="body" name="body" maxlength="500" rows="5" placeholder="Enter your message!"></textarea><div id="char_remaining">500 Characters
+                    <textarea id="body" name="body" maxlength="500" rows="3" placeholder="Enter your message!"></textarea><div id="char_remaining">500 Characters
                 </div>
-                <button class="btn btn-default" type="button" name="submit" value="submit">Send Mail</button>
+                <button id="send_mail_button" class="btn btn-default" type="button" name="submit" value="submit">Send Mail</button>
                 </form>
-
             </div>
         </div>
     </div>
