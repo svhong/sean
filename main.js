@@ -1,4 +1,7 @@
 $(document).ready(function(){
+    $(window).on('load', function() {
+        $('body').animate({scrollTop:0}, 650)
+    });
     var $pages = $(".pages"),
         tot = $pages.length,
         current = 0, pagePos = 0, down = 0, listen = true;
@@ -20,7 +23,7 @@ $(document).ready(function(){
         $('body').animate({scrollTop: dom_to_scroll_to}, 650);
     });
     $(window).scroll(function() {
-        if (current == 1) {
+        if (current == 2) {
             $('.bar').addClass('animate_bar');
 
         } else {

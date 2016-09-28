@@ -109,9 +109,15 @@ body {
     background: #2c3e50 ;
     text-indent: 1em;
 }
-
-/***************************SKILLS LINK CSS********************************************/
+/*************************EXPERIENCE LINK CSS****************************************************/
 .div2 {
+    height:90%;
+    margin-top: 65px;
+    text-align: center;
+    background: red;
+}
+/***************************SKILLS LINK CSS********************************************/
+.div3 {
     height:90%;
     margin-top: 65px;
 }
@@ -242,7 +248,7 @@ body {
     left:1%;
 }
 /***************************APPLICATIONS LINK CSS********************************************/
-.div3 {
+.div4 {
     height:90%;
     margin-top: 65px;
     text-align: center;
@@ -267,7 +273,7 @@ body {
 }
 /***************************CONTACT ME LINK CSS********************************************/
 
-.div4 {
+.div5 {
     height:90%;
     margin-top: 65px;
     text-align: center;
@@ -279,7 +285,7 @@ body {
     display: inline-block;
 }
 
-.div4 h4 {
+.div5 h4 {
     text-align: center;
     font-weight:bold;
 }
@@ -387,7 +393,7 @@ form > input {
         width:30%;
         margin-top: 5%;
     }
-    .div4 > h1 {
+    .div5 > h1 {
         margin-bottom: 10%;
     }
 
