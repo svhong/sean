@@ -115,7 +115,9 @@ body {
     margin-top: 65px;
     text-align: center;
     background: red;
+    position: relative;
 }
+
 /***************************SKILLS LINK CSS********************************************/
 .div3 {
     height:90%;
@@ -351,6 +353,7 @@ form > input {
         opacity: 1;
           }
 }
+
 /***************************MEDIA QUERIES FOR MOBILE OPTIMIZATION********************************************/
 @media screen and (max-width: 768px) {
     .navbar-custom .navbar-nav {
@@ -360,14 +363,14 @@ form > input {
 
 @media screen and (min-width: 800px) {
     .about_me_content > p {
-        height:120px;
+        height:130px;
         width:500px;
         color: #FFBD01;
         background: #2c3e50 ;
         text-indent: 1em;
         position: relative;
         left: 50%;
-        margin-top:7%;
+        margin-top:5%;
         -webkit-transform: translate(-50%);
         -moz-transform: translate(-50%);
         -ms-transform: translate(-50%);
