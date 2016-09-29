@@ -76,42 +76,63 @@ body {
 .div1 {
     height:90%;
     margin-top:65px;
-}
-
-.div1 > h1 {
+    background: purple;
     text-align: center;
 }
+
+.div1 > h1{
+    text-align: center;
+}
+
 .about_me_content {
-    height: 100%;
-    width: 100%;
+    width:80%;
+    height:90%;
+    background: yellow;
+    display: inline-block;
+    font-size: 0;
+    margin:0;
 }
 
-.pic_container{
-    margin: 0;
-    font-size:0;
-    height: 40%;
-    margin-bottom: 2%;
+.pic_and_links {
+    background: lightskyblue;
+    width: 50%;
+    height:100%;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.picture {
+    width:100%;
+    height:50%;
+    display: inline-block;
+
+}
+.my_contact_info{
+    width:100%;
+    height:50%;
+    display: inline-block;
+}
+
+.about_me {
+    background: orange;
+    width:50%;
+    height:100%;
+    display: inline-block;
+    overflow: hidden;
+}
+
+
+/*************************EXPERIENCE LINK CSS****************************************************/
+.div2 {
+    height:90%;
+    margin-top: 65px;
     text-align: center;
-}
-.pic_container > img {
-    height: 100%;
-    max-width: 30%;
-}
-
-.pic_container > img:nth-child(2){
-    margin: 0 5% 0 5%;
-}
-
-
-.about_me_content > p {
-    text-align: justify;
-    color: #FFBD01;
-    background: #2c3e50 ;
-    text-indent: 1em;
+    background: red;
+    position: relative;
 }
 
 /***************************SKILLS LINK CSS********************************************/
-.div2 {
+.div3 {
     height:90%;
     margin-top: 65px;
 }
@@ -242,7 +263,7 @@ body {
     left:1%;
 }
 /***************************APPLICATIONS LINK CSS********************************************/
-.div3 {
+.div4 {
     height:90%;
     margin-top: 65px;
     text-align: center;
@@ -267,7 +288,7 @@ body {
 }
 /***************************CONTACT ME LINK CSS********************************************/
 
-.div4 {
+.div5 {
     height:90%;
     margin-top: 65px;
     text-align: center;
@@ -279,7 +300,7 @@ body {
     display: inline-block;
 }
 
-.div4 h4 {
+.div5 h4 {
     text-align: center;
     font-weight:bold;
 }
@@ -345,6 +366,7 @@ form > input {
         opacity: 1;
           }
 }
+
 /***************************MEDIA QUERIES FOR MOBILE OPTIMIZATION********************************************/
 @media screen and (max-width: 768px) {
     .navbar-custom .navbar-nav {
@@ -353,30 +375,6 @@ form > input {
 }
 
 @media screen and (min-width: 800px) {
-    .about_me_content > p {
-        height:120px;
-        width:500px;
-        color: #FFBD01;
-        background: #2c3e50 ;
-        text-indent: 1em;
-        position: relative;
-        left: 50%;
-        margin-top:7%;
-        -webkit-transform: translate(-50%);
-        -moz-transform: translate(-50%);
-        -ms-transform: translate(-50%);
-        -o-transform: translate(-50%);
-        transform: translate(-50%);
-        
-    }
-    .pic_container{
-        margin: 0;
-        font-size:0;
-        height: 40%;
-        margin-bottom: 1%;
-        margin-top: 5%;
-        text-align: center;
-    }
     .app:nth-child(3n+0) {
         margin: 0 2% 0 2%;
     }
@@ -387,28 +385,12 @@ form > input {
         width:30%;
         margin-top: 5%;
     }
-    .div4 > h1 {
+    .div5 > h1 {
         margin-bottom: 10%;
     }
 
 }
 @media all and (orientation:portrait) {
-    .pic_container{
-        margin: 0;
-        font-size:0;
-        height: 40%;
-        margin-bottom: 10%;
-        text-align: center;
-    }
-
-    .pic_container{
-        font-size:0;
-        height: 45%;
-        margin-bottom: 5%;
-        margin-top: 10%;
-        text-align: center;
-    }
-
     .skills_container {
         margin-left: 2%;
         height: 19%;

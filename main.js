@@ -1,4 +1,7 @@
 $(document).ready(function(){
+    // $(window).on('load', function() {
+    //     $('body').animate({scrollTop:0}, 650)
+    // });
     var $pages = $(".pages"),
         tot = $pages.length,
         current = 0, pagePos = 0, down = 0, listen = true;
@@ -20,7 +23,7 @@ $(document).ready(function(){
         $('body').animate({scrollTop: dom_to_scroll_to}, 650);
     });
     $(window).scroll(function() {
-        if (current == 1) {
+        if (current == 2) {
             $('.bar').addClass('animate_bar');
 
         } else {
@@ -39,6 +42,15 @@ $(document).ready(function(){
     $('#send_mail_button').on('click', function(){
         send_mail();
         clear_input();
+    });
+    $('.test').click(function(){
+        if($(this).hasClass('shrink_icon')){
+            $(this).removeClass('shrink_icon').addClass('experience')
+        } else {
+            $(this).removeClass('experience').addClass('shrink_icon');
+            console.log('added shrink_icon class')
+        }
+
     })
 });
 function send_mail(){
@@ -65,3 +77,5 @@ function clear_input(){
     $('#subject').val('');
     $('#body').val('');
 }
+
+
