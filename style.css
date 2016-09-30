@@ -263,11 +263,12 @@ body {
 
 .pic_and_links {
     background: lightskyblue;
-    width: 50%;
+    width: 40%;
     height:100%;
     display: inline-block;
     overflow: hidden;
     text-align: left;
+    margin-left:1%;
 }
 
 .picture {
@@ -282,6 +283,7 @@ body {
     width:100%;
 }
 .contact_me_form {
+    padding-top:1%;
     background: red;
     display: inline-block;
     width: 55%;
@@ -298,20 +300,36 @@ body {
     background: lavender;
 }
 
+.div5 > h1 {
+    margin-bottom: 5px;
+}
+
 .about_me {
     background: orange;
-    width:50%;
+    width:45%;
     height:100%;
     display: inline-block;
     overflow: hidden;
-    font-size:initial;
+    font-size:11px;
     font-weight:bold;
     text-align: justify;
     text-indent:1em;
+    margin-right:1%;
+    padding-top: 3%;
 }
 
-.contact_me_form input {
+#char_remaining{
+    display: inline-block;
+    font-size:0.75em;
+}
+
+.contact_me_form input, textarea {
     width: 100%;
+}
+
+#send_mail_button {
+    background: #2c3e50;
+    color: #FFBD01;
 }
 
 /*****************************************CSS ANIMATIONS****************************************************/
@@ -349,10 +367,18 @@ body {
         width:30%;
         margin-top: 5%;
     }
-    /*.div5 > h1 {*/
-        /*margin-bottom: 10%;*/
-    /*}*/
-
+    .about_me {
+        background: orange;
+        width:45%;
+        height:100%;
+        display: inline-block;
+        overflow: hidden;
+        font-size:initial;
+        font-weight:bold;
+        text-align: justify;
+        text-indent:1em;
+        margin-right:1%;
+    }
 }
 @media all and (orientation:portrait) {
     .skills_container {
@@ -384,17 +410,5 @@ body {
         width:45%;
         margin-top: 5%;
     }
-    /*.contact_message {*/
-        /*display: inline-block;*/
-        /*width:100%;*/
-        /*vertical-align: top;*/
-        /*margin-right: 2%;*/
-    /*}*/
-    /*.input_field {*/
-        /*height:50%;*/
-        /*width:100%;*/
-        /*text-align: left;*/
-        /*display: inline-block;*/
-    /*}*/
 }
 
