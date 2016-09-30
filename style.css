@@ -84,42 +84,6 @@ body {
     text-align: center;
 }
 
-.about_me_content {
-    width:80%;
-    height:90%;
-    background: yellow;
-    display: inline-block;
-    font-size: 0;
-    margin:0;
-}
-
-.pic_and_links {
-    background: lightskyblue;
-    width: 50%;
-    height:100%;
-    display: inline-block;
-    overflow: hidden;
-}
-
-.picture {
-    width:100%;
-    height:50%;
-    display: inline-block;
-
-}
-.my_contact_info{
-    width:100%;
-    height:50%;
-    display: inline-block;
-}
-
-.about_me {
-    background: orange;
-    width:50%;
-    height:100%;
-    display: inline-block;
-    overflow: hidden;
-}
 
 
 /*************************EXPERIENCE LINK CSS****************************************************/
@@ -292,64 +256,70 @@ body {
     height:90%;
     margin-top: 65px;
     text-align: center;
+    background: purple;
 }
-.input_field {
-    height:50%;
-    width:50%;
+.about_me_content {
+    width:80%;
+    height:90%;
+    background: yellow;
+    display: inline-block;
+    font-size: 0;
+    margin:0;
+}
+
+.pic_and_links {
+    background: lightskyblue;
+    width: 50%;
+    height:100%;
+    display: inline-block;
+    overflow: hidden;
     text-align: left;
-    display: inline-block;
 }
 
-.div5 h4 {
-    text-align: center;
-    font-weight:bold;
-}
-
-#char_remaining {
-    font-size:1em;
-    font-weight: bold;
-    height: 3%;
-}
-
-.form_container {
-    height: 90%;
-    width: 80%;
-    margin:auto;
-}
-
-form > input {
-    margin: 1% 0 1% 0;
-    max-width: 40%;
-}
-
-#body {
-    width: 60%;
-    resize: none;
-    outline: none;
-}
-
-.contact_message {
-    display: inline-block;
+.picture {
     width:45%;
-    vertical-align: top;
-    margin-right: 2%;
-
+    height:50%;
+    display: inline-block;
+    overflow: hidden;
 }
 
-.contact_message > h3 {
-    text-align: center;
+.picture > img {
+    height:100%;
+    width:100%;
+}
+.contact_me_form {
+    background: red;
+    display: inline-block;
+    width: 55%;
+    height:50%;
+    font-size:initial;
+    overflow: hidden;
+}
+.my_contact_info{
+    width:100%;
+    height:50%;
+    display: inline-block;
+    font-size: initial;
+    text-align: left;
+    background: lavender;
 }
 
-.contact_message > p {
+.about_me {
+    background: orange;
+    width:50%;
+    height:100%;
+    display: inline-block;
+    overflow: hidden;
+    font-size:initial;
+    font-weight:bold;
     text-align: justify;
-    text-indent: 1em;
+    text-indent:1em;
 }
 
-.input_field .btn {
-    background: #2c3e50;
-    color: #FFBD01;
-    border:none;
+.contact_me_form input {
+    width: 100%;
 }
+
 /*****************************************CSS ANIMATIONS****************************************************/
 @keyframes bar_fill {
     from {
@@ -385,9 +355,9 @@ form > input {
         width:30%;
         margin-top: 5%;
     }
-    .div5 > h1 {
-        margin-bottom: 10%;
-    }
+    /*.div5 > h1 {*/
+        /*margin-bottom: 10%;*/
+    /*}*/
 
 }
 @media all and (orientation:portrait) {
@@ -420,17 +390,17 @@ form > input {
         width:45%;
         margin-top: 5%;
     }
-    .contact_message {
-        display: inline-block;
-        width:100%;
-        vertical-align: top;
-        margin-right: 2%;
-    }
-    .input_field {
-        height:50%;
-        width:100%;
-        text-align: left;
-        display: inline-block;
-    }
+    /*.contact_message {*/
+        /*display: inline-block;*/
+        /*width:100%;*/
+        /*vertical-align: top;*/
+        /*margin-right: 2%;*/
+    /*}*/
+    /*.input_field {*/
+        /*height:50%;*/
+        /*width:100%;*/
+        /*text-align: left;*/
+        /*display: inline-block;*/
+    /*}*/
 }
 
