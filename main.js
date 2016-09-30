@@ -33,11 +33,9 @@ $(document).ready(function(){
     var max_length_for_textarea = 500;
 
     $('#body').keyup(function(){
-        console.log('you are typing and its registering');
-
         var length = $(this).val().length;
         var remaining_length = max_length_for_textarea - length;
-        $('#char_remaining').text(remaining_length + ' Characters Remaining');
+        $('#char_remaining').text(remaining_length + ' Characters');
     });
     $('#send_mail_button').on('click', function(){
         send_mail();
