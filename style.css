@@ -247,14 +247,14 @@ body {
 /***************************CONTACT ME LINK CSS********************************************/
 
 .div5 {
-    height:90%;
+    height:82%;
     margin-top: 65px;
     text-align: center;
     background: purple;
 }
 .about_me_content {
     width:80%;
-    height:90%;
+    height:86%;
     background: yellow;
     display: inline-block;
     font-size: 0;
@@ -283,7 +283,6 @@ body {
     width:100%;
 }
 .contact_me_form {
-    padding-top:1%;
     background: red;
     display: inline-block;
     width: 55%;
@@ -315,12 +314,17 @@ body {
     text-align: justify;
     text-indent:1em;
     margin-right:1%;
-    padding-top: 3%;
+}
+
+form, #body {
+    font-size:11px;
+    font-weight: bold;
 }
 
 #char_remaining{
     display: inline-block;
     font-size:0.75em;
+    font-weight:bold;
 }
 
 .contact_me_form input, textarea {
@@ -379,6 +383,12 @@ body {
         text-indent:1em;
         margin-right:1%;
     }
+
+    form, #body {
+        font-size:initial;
+        font-weight:bold;
+    }
+
 }
 @media all and (orientation:portrait) {
     .skills_container {
