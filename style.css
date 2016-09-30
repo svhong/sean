@@ -141,8 +141,6 @@ body {
     right: 0;
     width: 10%;
     height: 100%;
-    font-size: 1.3em;
-    animation: fade_in 6s;
 }
 
 .bar {
@@ -155,10 +153,6 @@ body {
     -webkit-animation:bar_fill 2s ease-out;
     -o-animation:bar_fill 2s ease-out;
     animation:bar_fill 2s ease-out;
-}
-
-.num_block {
-    color: #FFBD01;
 }
 
 /************************************METER BAR CSS*****************************************/
