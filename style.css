@@ -270,7 +270,7 @@ body {
 
 .picture {
     width:45%;
-    height:50%;
+    height:45%;
     display: inline-block;
     overflow: hidden;
 }
@@ -332,6 +332,8 @@ form, #body {
 #send_mail_button {
     background: #2c3e50;
     color: #FFBD01;
+    border: none;
+    box-shadow: 3px 3px 7px #888888 ;
 }
 
 /*****************************************CSS ANIMATIONS****************************************************/
@@ -370,7 +372,7 @@ form, #body {
         margin-top: 5%;
     }
     .about_me {
-        width:45%;
+        width:30%;
         height:100%;
         display: inline-block;
         overflow: hidden;
@@ -378,12 +380,12 @@ form, #body {
         font-weight:bold;
         text-align: justify;
         text-indent:1em;
-        margin-right:1%;
-        padding-top: 11%;
+        margin-right:5%;
+        padding-top: 2%;
     }
 
     form {
-        padding-top:50%;
+        padding-top:10%;
     }
 
     form, #body {
