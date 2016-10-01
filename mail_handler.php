@@ -21,9 +21,9 @@ $options = array(
     )
 );
 $mail->smtpConnect($options);
-$mail->From = 'seanhongdev@gmail.com';//your email sending account
-$mail->FromName = 'Sean Hong';//your email sending account name
-$mail->addAddress('writeseanhong@gmail.com');     // Add a recipient
+$mail->From = $_POST['From'];//your email sending account
+$mail->FromName = $_POST['FromName'];//your email sending account name
+$mail->addAddress('seanhongdev@gmail.com');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 $mail->addReplyTo($_POST['From'], $_POST['FromName']);
 //$mail->addCC('cc@example.com');

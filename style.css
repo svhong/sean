@@ -76,42 +76,33 @@ body {
 .div1 {
     height:90%;
     margin-top:65px;
-}
-
-.div1 > h1 {
     text-align: center;
 }
-.about_me_content {
-    height: 100%;
-    width: 100%;
+
+.front_page {
+    height:100%;
+    width:90%;
+    display: inline-block;
+
 }
 
-.pic_container{
-    margin: 0;
-    font-size:0;
-    height: 40%;
-    margin-bottom: 2%;
+.front_page img {
+    height:100%;
+    width:100%;
+}
+
+
+/*************************EXPERIENCE LINK CSS****************************************************/
+.div2 {
+    height:90%;
+    margin-top: 65px;
     text-align: center;
-}
-.pic_container > img {
-    height: 100%;
-    max-width: 30%;
-}
-
-.pic_container > img:nth-child(2){
-    margin: 0 5% 0 5%;
-}
-
-
-.about_me_content > p {
-    text-align: justify;
-    color: #FFBD01;
-    background: #2c3e50 ;
-    text-indent: 1em;
+    background: red;
+    position: relative;
 }
 
 /***************************SKILLS LINK CSS********************************************/
-.div2 {
+.div3 {
     height:90%;
     margin-top: 65px;
 }
@@ -156,8 +147,6 @@ body {
     right: 0;
     width: 10%;
     height: 100%;
-    font-size: 1.3em;
-    animation: fade_in 6s;
 }
 
 .bar {
@@ -170,10 +159,6 @@ body {
     -webkit-animation:bar_fill 2s ease-out;
     -o-animation:bar_fill 2s ease-out;
     animation:bar_fill 2s ease-out;
-}
-
-.num_block {
-    color: #FFBD01;
 }
 
 /************************************METER BAR CSS*****************************************/
@@ -242,7 +227,7 @@ body {
     left:1%;
 }
 /***************************APPLICATIONS LINK CSS********************************************/
-.div3 {
+.div4 {
     height:90%;
     margin-top: 65px;
     text-align: center;
@@ -267,68 +252,96 @@ body {
 }
 /***************************CONTACT ME LINK CSS********************************************/
 
-.div4 {
+.div5 {
     height:90%;
     margin-top: 65px;
     text-align: center;
 }
-.input_field {
-    height:50%;
-    width:50%;
-    text-align: left;
+.about_me_content {
+    width:80%;
+    height:86%;
     display: inline-block;
+    font-size: 0;
+    margin:0;
 }
 
-.div4 h4 {
-    text-align: center;
+.pic_and_links {
+    width: 40%;
+    height:100%;
+    display: inline-block;
+    overflow: hidden;
+    text-align: left;
+    margin-left:1%;
+}
+
+.picture {
+    width:45%;
+    height:45%;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.picture > img {
+    height:100%;
+    width:100%;
+}
+.contact_me_form {
+    display: inline-block;
+    width: 55%;
+    height:50%;
+    font-size:initial;
+    overflow: hidden;
+}
+.my_contact_info{
+    width:100%;
+    height:50%;
+    display: inline-block;
+    font-size: initial;
+    text-align: left;
+}
+
+.div5 > h1 {
+    margin-bottom: 5px;
+}
+
+.about_me {
+    width:45%;
+    height:100%;
+    display: inline-block;
+    overflow: hidden;
+    font-size:11px;
     font-weight:bold;
+    text-align: justify;
+    text-indent:1em;
+    margin-right:1%;
 }
 
-#char_remaining {
-    font-size:1em;
+form, #body {
+    font-size:11px;
     font-weight: bold;
-    height: 3%;
-}
-
-.form_container {
-    height: 90%;
-    width: 80%;
-    margin:auto;
-}
-
-form > input {
-    margin: 1% 0 1% 0;
-    max-width: 40%;
 }
 
 #body {
-    width: 60%;
-    resize: none;
-    outline: none;
+    height: 7em;
 }
 
-.contact_message {
+#char_remaining{
     display: inline-block;
-    width:45%;
-    vertical-align: top;
-    margin-right: 2%;
-
+    font-size:0.75em;
+    font-weight:bold;
 }
 
-.contact_message > h3 {
-    text-align: center;
+.contact_me_form input, textarea {
+    width: 100%;
 }
 
-.contact_message > p {
-    text-align: justify;
-    text-indent: 1em;
-}
-
-.input_field .btn {
+#send_mail_button {
     background: #2c3e50;
     color: #FFBD01;
-    border:none;
+    border: none;
+    box-shadow: 3px 3px 7px #888888 ;
 }
+
 /*****************************************CSS ANIMATIONS****************************************************/
 @keyframes bar_fill {
     from {
@@ -345,6 +358,7 @@ form > input {
         opacity: 1;
           }
 }
+
 /***************************MEDIA QUERIES FOR MOBILE OPTIMIZATION********************************************/
 @media screen and (max-width: 768px) {
     .navbar-custom .navbar-nav {
@@ -353,30 +367,6 @@ form > input {
 }
 
 @media screen and (min-width: 800px) {
-    .about_me_content > p {
-        height:120px;
-        width:500px;
-        color: #FFBD01;
-        background: #2c3e50 ;
-        text-indent: 1em;
-        position: relative;
-        left: 50%;
-        margin-top:7%;
-        -webkit-transform: translate(-50%);
-        -moz-transform: translate(-50%);
-        -ms-transform: translate(-50%);
-        -o-transform: translate(-50%);
-        transform: translate(-50%);
-        
-    }
-    .pic_container{
-        margin: 0;
-        font-size:0;
-        height: 40%;
-        margin-bottom: 1%;
-        margin-top: 5%;
-        text-align: center;
-    }
     .app:nth-child(3n+0) {
         margin: 0 2% 0 2%;
     }
@@ -387,28 +377,40 @@ form > input {
         width:30%;
         margin-top: 5%;
     }
-    .div4 > h1 {
-        margin-bottom: 10%;
+    .about_me {
+        width:30%;
+        height:100%;
+        display: inline-block;
+        overflow: hidden;
+        font-size:initial;
+        font-weight:bold;
+        text-align: justify;
+        text-indent:1em;
+        margin-right:5%;
+        padding-top: 4%;
     }
 
+    form {
+        padding-top:16%;
+    }
+
+    form, #body {
+        font-size:initial;
+        font-weight:bold;
+    }
+
+    #body {
+        height: 10em;
+    }
+    .about_me_content {
+        width:80%;
+        height:86%;
+        display: inline-block;
+        font-size: 0;
+        margin-top: 3%;
+    }
 }
 @media all and (orientation:portrait) {
-    .pic_container{
-        margin: 0;
-        font-size:0;
-        height: 40%;
-        margin-bottom: 10%;
-        text-align: center;
-    }
-
-    .pic_container{
-        font-size:0;
-        height: 45%;
-        margin-bottom: 5%;
-        margin-top: 10%;
-        text-align: center;
-    }
-
     .skills_container {
         margin-left: 2%;
         height: 19%;
@@ -438,17 +440,36 @@ form > input {
         width:45%;
         margin-top: 5%;
     }
-    .contact_message {
+
+    .about_me_content {
+        width:80%;
+        height:92%;
         display: inline-block;
-        width:100%;
-        vertical-align: top;
-        margin-right: 2%;
+        font-size: 0;
+        margin:0;
     }
-    .input_field {
-        height:50%;
+
+    .about_me {
         width:100%;
-        text-align: left;
+        height:40%;
         display: inline-block;
+        overflow: hidden;
+        font-size:11px;
+        font-weight:bold;
+        text-align: justify;
+        text-indent:1em;
+        margin:15% 0 0 0;
+    }
+    .pic_and_links {
+        width: 80%;
+        height: 50%;
+        display: inline-block;
+        overflow: hidden;
+        text-align: left;
+    }
+
+    form {
+        padding-top: 12%;
     }
 }
 
