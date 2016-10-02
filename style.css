@@ -83,7 +83,9 @@ body {
     height:100%;
     width:90%;
     display: inline-block;
-
+    background: url("images/seanhongdev.jpg") no-repeat;
+    background-size:contain;
+    box-shadow: 0 0 8px 8px #ECF0F1 inset;
 }
 
 .front_page img {
