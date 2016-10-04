@@ -322,8 +322,12 @@ form, #body {
     font-weight:bold;
 }
 
-.contact_me_form input, textarea {
-    width: 100%;
+.contact_me_form input {
+    width: 85%;
+}
+
+textarea {
+    width: 100%
 }
 
 #send_mail_button {
