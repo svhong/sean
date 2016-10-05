@@ -364,6 +364,16 @@ textarea {
 .modal-header, .modal-footer {
     border-color: #FFBD01 !important;
 }
+
+.modal-body ul {
+    font-weight:bold;
+    text-align: center;
+}
+.modal-body li {
+    font-weight: normal;
+    margin-top: 2%;
+    text-align: left;
+}
 /*****************************************CSS ANIMATIONS****************************************************/
 @keyframes bar_fill {
     from {
