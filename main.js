@@ -41,15 +41,10 @@ $(document).ready(function(){
         send_mail();
         clear_input();
     });
-    $('.test').click(function(){
-        if($(this).hasClass('shrink_icon')){
-            $(this).removeClass('shrink_icon').addClass('experience')
-        } else {
-            $(this).removeClass('experience').addClass('shrink_icon');
-            console.log('added shrink_icon class')
-        }
-
-    })
+    $('.experience').click(function(){
+        var show_modal = $(this).attr('id') + '_modal';
+        $('#'+show_modal).modal('show')
+    });
 });
 function send_mail(){
     $.ajax({
