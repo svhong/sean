@@ -21,7 +21,8 @@
 <!-------------------------------------------navigator bar------------------------------------->
 <nav class="nav navbar-custom navbar-fixed-top" id="navibar">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigationbar" aria-expanded="false">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigationbar"
+                aria-expanded="false">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -46,7 +47,18 @@
     </div>
     <div class="pages div2">
         <h1>Experience</h1>
-        <div class="test experience">LFZ</div>
+        <div class="experience" id="lfz">
+            <img src="images/lfz.jpg" alt="learningfuze">
+        </div>
+        <div class="experience" id="ups">
+            <img src="images/ups.png" alt="universal">
+        </div>
+        <div class="experience" id="nsls">
+            <img src="images/nsls.jpg" alt="sigma alpha pi">
+        </div>
+        <div class="experience" id="rotc">
+            <img src="images/rotc.jpg" alt="reserve officers training corp">
+        </div>
     </div>
     <div class="pages div3">
         <div class="skills_container">
@@ -160,8 +172,8 @@
     </div>
     <div class="pages div4">
         <h1>My Applications</h1>
-            <div class="app">
-                <h5>Memory Match</h5>
+        <div class="app">
+            <h5>Memory Match</h5>
             <img src="images/bttf.jpg" alt="Memory Match Picture">
             <div class="links">
                 <a href="http://memory_match.seanhongdev.com">Live Demo</a>
@@ -218,7 +230,14 @@
     <div class="pages div5">
         <h1>Contact Me</h1>
         <div class="about_me_content">
-            <div class="about_me">Hello! My name is Sean Hong. I am a front end web developer currently seeking an opportunity to join a team of like minded individuals and expand my knowledge! I am a father to 3 beautiful girls and I love what I do! I have pursued many different things in life, but nothing has my passion burning like coding! I love solving problems and finding new ways to make things more efficient! I grew up in Hawaii and now my family and I currently reside in Orange County! I love martial arts, hiking, riding my motorcycle, grilling poolside, and creating JavaScript functions! Use the Contact area to say hi!</div>
+            <div class="about_me">Hello! My name is Sean Hong. I am a front end web developer currently seeking an
+                opportunity to join a team of like minded individuals and expand my knowledge! I am a father to 3
+                beautiful girls and I love what I do! I have pursued many different things in life, but nothing has my
+                passion burning like coding! I love solving problems and finding new ways to make things more efficient!
+                I grew up in Hawaii and now my family and I currently reside in Orange County! I love martial arts,
+                hiking, riding my motorcycle, grilling poolside, and creating JavaScript functions! Use the Contact area
+                to say hi!
+            </div>
             <div class="pic_and_links">
                 <div class="contact_me_form">
                     <form method="post" action="mail_handler.php">
@@ -244,6 +263,121 @@
                     <div id="char_remaining">500 Characters
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--MODALS-->
+<!--LFZ MODAL-->
+<div class="modal fade" id="lfz_modal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                LearningFuze [2016]
+            </div>
+            <div class="modal-body">
+                <b>
+                    <ins>Accelerated Web Development Program</ins>
+                </b>
+                <br>
+                <br>
+                - Collaborate with team members in creating applications
+                <br>
+                - Utilized various frameworks to build applications
+                <br>
+                - Participated and utilized SCRUM process
+                <br>
+                - Learned best practices to develop and produce clean and efficient code
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--UPS MODAL-->
+<div class="modal fade" id="ups_modal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                UNIVERSAL PROTECTION SERVICE [2015 - 2016]
+            </div>
+            <div class="modal-body">
+                <b>
+                    <ins>Security Officer for Fashion Island @ Newport Beach
+                    </ins>
+                </b>
+                <br>
+                <br>
+                - Effectively communicated with team members to report various activities within the property
+                <br>
+                - Cooperated with local law enforcement and first responders to provide information and assistance
+
+                <br>
+                - Patrol the inner and outer perimeter of property during after hours
+                <br>
+                - Monitor surveillance room, report and log activities taking place on the property
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--NSLS MODAL-->
+<div class="modal fade" id="nsls_modal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                National Society of Leadership and Success [2014 - 2015]
+            </div>
+            <div class="modal-body">
+                <b>
+                    <ins>Vice President of SIUE Chapter</ins>
+                </b>
+                <br>
+                <br>
+                - Collaborate with executive board to plan, coordinate, and execute events
+                <br>
+                - Manage attendance of inductees and oversee society events
+                <br>
+                - Provide accurate information to future inductees and members
+                <br>
+                - Substitute duties in absence of Society President
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--ROTC MODAL-->
+<div class="modal fade" id="rotc_modal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                U.S. Army ROTC [2012 - 2014]
+            </div>
+            <div class="modal-body">
+                <b>
+                    <ins>Southern Illinois University Edwardsville Army ROTC</ins>
+                </b>
+                <br>
+                <br>
+                - Lead teams and cadets during training exercises
+                <br>
+                - Manage time and skills to plan and execute training operations
+                <br>
+                - used various problem solving techniques to strengthen teamwork and complete missions
+                <br>
+                - Recipient of American Legion Scholastic Silver Award
+                <br>
+                - Captain of SIUE ROTC Color Guard
+                <br>
+                - Outstanding Volunteer Award
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
