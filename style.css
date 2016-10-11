@@ -269,7 +269,8 @@ body {
     margin:0;
 }
 
-.pic_and_links {
+.pic{
+    background: red;
     width: 40%;
     height:100%;
     display: inline-block;
