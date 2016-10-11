@@ -269,13 +269,24 @@ body {
     margin:0;
 }
 
-.pic_and_links {
+.pic{
+    background: red;
     width: 40%;
     height:100%;
     display: inline-block;
     overflow: hidden;
     text-align: left;
     margin-left:1%;
+}
+
+.pic_form {
+    width: 45%;
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+    opacity: 0.4;
+    background: url("images/profile.jpg") no-repeat;
+    background-size: contain;
 }
 
 .picture {
@@ -290,7 +301,8 @@ body {
     width:100%;
 }
 .contact_me_form {
-    display: inline-block;
+    text-align: left;
+    background: red;
     width: 55%;
     height:50%;
     font-size:initial;
