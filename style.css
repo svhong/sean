@@ -260,6 +260,7 @@ body {
     height:90%;
     margin-top: 65px;
     text-align: center;
+    position: relative;
 }
 .about_me_content {
     width:80%;
@@ -270,7 +271,6 @@ body {
 }
 
 .pic{
-    background: red;
     width: 40%;
     height:100%;
     display: inline-block;
@@ -279,41 +279,35 @@ body {
     margin-left:1%;
 }
 
-.pic_form {
+.pic {
     width: 45%;
     height: 100%;
     display: inline-block;
     overflow: hidden;
     opacity: 0.4;
     background: url("images/profile.jpg") no-repeat;
-    background-size: contain;
-}
-
-.picture {
-    width:45%;
-    height:45%;
-    display: inline-block;
-    overflow: hidden;
-}
-
-.picture > img {
-    height:100%;
-    width:100%;
+    background-size: cover;
 }
 .contact_me_form {
-    text-align: left;
-    background: red;
-    width: 55%;
-    height:50%;
-    font-size:initial;
-    overflow: hidden;
-}
-.my_contact_info{
-    width:100%;
-    height:50%;
+    height: 85%;
+    width: 25%;
+    position: absolute;
+    top: 13%;
     display: inline-block;
-    font-size: initial;
+    left: 52%;
     text-align: left;
+    overflow: hidden;
+    font-size: initial;
+}
+
+input {
+    width:80%;
+    border:none;
+    box-shadow: 3px 3px 7px #888888;
+}
+#body {
+    width: 100%;
+    box-shadow: 3px 3px 7px #888888;
 }
 
 .div5 > h1 {
@@ -332,27 +326,11 @@ body {
     margin-right:1%;
 }
 
-form, #body {
-    font-size:11px;
-    font-weight: bold;
-}
-
-#body {
-    height: 7em;
-}
 
 #char_remaining{
     display: inline-block;
     font-size:0.75em;
     font-weight:bold;
-}
-
-.contact_me_form input {
-    width: 85%;
-}
-
-textarea {
-    width: 100%
 }
 
 #send_mail_button {
@@ -431,17 +409,8 @@ textarea {
         text-align: justify;
         text-indent:1em;
         margin-right:5%;
-        padding-top: 4%;
     }
 
-    form {
-        padding-top:16%;
-    }
-
-    form, #body {
-        font-size:initial;
-        font-weight:bold;
-    }
 
     #body {
         height: 10em;
@@ -460,6 +429,27 @@ textarea {
         margin:5% 5% 0 0;
         border: 5px solid #2c3e50;
         cursor: pointer;
+    }
+    .contact_me_form {
+        height: 85%;
+        width: 18%;
+        position: absolute;
+        top: 15%;
+        display: inline-block;
+        left: 49%;
+        text-align: left;
+        overflow: hidden;
+        font-size: initial;
+    }
+    .pic {
+        width: 40%;
+        height: 85%;
+        display: inline-block;
+        vertical-align: top;
+        overflow: hidden;
+        opacity: 0.4;
+        background: url(images/profile.jpg) no-repeat;
+        background-size: cover;
     }
 }
 @media all and (orientation:portrait) {
@@ -502,7 +492,7 @@ textarea {
     }
 
     .about_me {
-        width:100%;
+        width:90%;
         height:40%;
         display: inline-block;
         overflow: hidden;
@@ -510,19 +500,9 @@ textarea {
         font-weight:bold;
         text-align: justify;
         text-indent:1em;
-        margin:15% 0 0 0;
-    }
-    .pic_and_links {
-        width: 80%;
-        height: 50%;
-        display: inline-block;
-        overflow: hidden;
-        text-align: left;
+        margin:11% 0 0 0;
     }
 
-    form {
-        padding-top: 12%;
-    }
     .experience {
         height: 30%;
         width: 45%;
@@ -530,6 +510,27 @@ textarea {
         margin: 10% 1% 0 0;
         border: 5px solid #2c3e50;
         cursor: pointer;
+    }
+    .pic {
+        width: 90%;
+        height: 50%;
+        display: inline-block;
+        /* overflow: hidden; */
+        opacity: 0.4;
+        background: url(images/profile.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    .contact_me_form {
+        height: 90%;
+        width: 50%;
+        position: absolute;
+        top: 52%;
+        display: inline-block;
+        left: 17%;
+        text-align: left;
+        overflow: hidden;
+        font-size: initial;
     }
 }
 
