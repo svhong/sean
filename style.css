@@ -539,7 +539,7 @@ input {
         font-weight:bold;
         text-align: justify;
         text-indent:1em;
-        margin:11% 0 0 0;
+        margin:1% 0 0 0;
     }
 
     .experience {
@@ -564,7 +564,7 @@ input {
         height: 90%;
         width: 50%;
         position: absolute;
-        top: 52%;
+        top: 45%;
         display: inline-block;
         left: 17%;
         text-align: left;
