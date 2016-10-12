@@ -451,6 +451,10 @@ input {
         background: url(images/profile.jpg) no-repeat;
         background-size: cover;
     }
+
+    input {
+        width: 95%;
+    }
 }
 @media all and (orientation:portrait) {
     .skills_container {
