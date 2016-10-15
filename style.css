@@ -423,7 +423,9 @@ input {
         width:30%;
         margin-top: 1%;
     }
-
+    .links {
+        margin-top: 0.5%;
+    }
     .app_cont {
         height:100%;
         width:100%;
