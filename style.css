@@ -278,7 +278,7 @@ body {
 
 }
 
-.links a:hover, a:active, a:visited {
+.links a:hover, a:active, a:visited, a:link {
     color: #FFBD01;
 }
 
