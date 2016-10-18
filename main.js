@@ -45,6 +45,7 @@ $(document).ready(function(){
         var show_modal = $(this).attr('id') + '_modal';
         $('#'+show_modal).modal('show')
     });
+    $('brand')
 });
 function send_mail(){
     $.ajax({
