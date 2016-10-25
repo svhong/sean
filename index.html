@@ -27,7 +27,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="http://www.seanhongdev.com">Sean Hong</a>
+        <a class="navbar-brand" href="http://www.seanhongdev.com" id="brand">Sean Hong</a>
     </div>
     <div class="collapse navbar-collapse" id="navigationbar">
         <ul class="nav navbar-nav">
@@ -42,6 +42,9 @@
 <div id="main">
     <div class="pages div1">
         <div class="grad_header"></div>
+        <div class="front_text">
+            <img src="images/seanhongdevtext.png" alt="front page text">
+        </div>
         <div class="front_page">
             <img src="images/seanhongdev.jpg" alt="front page picture">
         </div>
@@ -179,7 +182,9 @@
                 <h5>Memory Match</h5>
                 <img src="images/bttf.jpg" alt="Memory Match Picture">
                 <div class="links">
-                    <a href="http://memory_match.seanhongdev.com" target="_blank">Live Demo</a>
+                    <a href="#mmModal" data-target="#mmModal" data-toggle="modal">Tech Used</a>
+                    <p>|</p>
+                    <a href="http://memory_match.seanhongdev.com">Live Demo</a>
                     <p>|</p>
                     <a href="https://github.com/svhong/memorymatch.git" target="_blank">GitHub</a>
                 </div>
@@ -188,33 +193,37 @@
         <div class="app">
             <div class="app_cont">
                 <h5>Calculator</h5>
-                <img src="images/calc.jpg" alt="Calculator Image">
+                <img src="images/calculator.jpg" alt="Calculator Image">
                 <div class="links">
-                    <a href="">Live Demo</a>
+                    <a href="#calcModal" data-target="#calcModal" data-toggle="modal">Tech Used</a>
                     <p>|</p>
-                    <a href="">GitHub</a>
+                    <a href="http://pinkulator.seanhongdev.com">Live Demo</a>
+                    <p>|</p>
+                    <a href="https://github.com/svhong/my_calculator.git">GitHub</a>
                 </div>
             </div>
         </div>
         <div class="app">
             <div class="app_cont">
-                <h5>JS Snippets</h5>
-                <img src="images/bttf.jpg" alt="JavaScript Image">
+                <h5>Mboutique</h5>
+                <img src="images/mboutique.jpg" alt="mBoutique Image">
                 <div class="links">
-                    <a href="">Live Demo</a>
+                    <a href="#mbModal" data-target="#mbModal" data-toggle="modal">Tech Used</a>
                     <p>|</p>
-                    <a href="">GitHub</a>
+                    <a href="http://mboutique.seanhongdev.com/main.php">Live Demo</a>
+                    <p>|</p>
+                    <a href="https://github.com/svhong/my_mboutique.git">GitHub</a>
                 </div>
             </div>
         </div>
         <div class="app">
             <div class="app_cont">
-                <h5>Blind Date</h5>
-                <img src="images/blinddate.jpg" alt="Blind Date Image">
+                <h5>Friendly Adventures</h5>
+                <img src="images/friendlyadventure.jpg" alt="Friendly Adventure Image">
                 <div class="links">
-                    <a href="">Live Demo</a>
+                    <a href="#faModal" data-target="#faModal" data-toggle="modal">Tech Used</a>
                     <p>|</p>
-                    <a href="">GitHub</a>
+                    <a href="https://github.com/svhong/friendly_adventures.git">GitHub</a>
                 </div>
             </div>
         </div>
@@ -223,9 +232,11 @@
                 <h5>Student Grade Table</h5>
                 <img src="images/sgt.jpg" alt="SGT Image">
                 <div class="links">
-                    <a href="">Live Demo</a>
+                    <a href="#sgtModal" data-target="#sgtModal" data-toggle="modal">Tech Used</a>
                     <p>|</p>
-                    <a href="">GitHub</a>
+                    <a href="http://sgt.seanhongdev.com">Live Demo</a>
+                    <p>|</p>
+                    <a href="https://github.com/svhong/student_grade_table.git">GitHub</a>
                 </div>
             </div>
         </div>
@@ -234,9 +245,11 @@
                 <h5>Tic-Tac-Toe</h5>
                 <img src="images/ttt.jpg" alt="Tic-Tac-Toe Image">
                 <div class="links">
-                    <a href="">Live Demo</a>
+                    <a href="#tttModal" data-target="#tttModal" data-toggle="modal">Tech Used</a>
                     <p>|</p>
-                    <a href="">GitHub</a>
+                    <a href="http://tictactoe.seanhongdev.com">Live Demo</a>
+                    <p>|</p>
+                    <a href="https://github.com/svhong/oopttt.git">GitHub</a>
                 </div>
             </div>
         </div>
@@ -282,14 +295,17 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                LearningFuze [2016]
+                LearningFuze [2016] - [Present]
             </div>
             <div class="modal-body">
                 <ul>Accelerated Web Development Program
-                    <li>Collaborate with team members in creating applications</li>
-                    <li>Utilized various frameworks to build applications</li>
-                    <li>Participated and utilized SCRUM process</li>
-                    <li>Learned best practices to develop clean and efficient code</li>
+                    <li>Remote Teaching Assistant</li>
+                    <li>Review, debug and evaluate code prototypes to confirm standards are met, prototypes are functional, and provide constructive feedback.</li>
+                    <li>Assist current students in expanding their knowledge.</li>
+                    <li>Collaborate with team members in creating applications.</li>
+                    <li>Utilized various frameworks and languages to build applications.</li>
+                    <li>Participated and utilized SCRUM process to incorporate and eliminate ideas.</li>
+                    <li>Learned best practices to develop clean and efficient code.</li>
                 </ul>
             </div>
             <div class="modal-footer">
@@ -371,19 +387,136 @@
         </div>
     </div>
 </div>
+<!-- Application Modals -->
+<div class="modal fade" id="mmModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                Memory Match
+            </div>
+            <div class="modal-body">
+                <p class="description">A simple card memory match game with an awesome theme. Match the cards to go "Back To The Future!"</p>
+                <ul>Technologies Used
+                    <li><b>Angular.JS, jQuery, JavaScript, HTML5, CSS3, Bootstrap</b></li>
+                    <li><b>Angular.JS</b> was utilized to create the foundation and logic of the game.</li>
+                    <li><b>jQuery</b> and <b>Angular.JS</b> were used to dynamically create the cards and randomize them on the board.</li>
+                    <li><b>HTML5</b> and <b>CSS3</b> was utilized to create the final winning effect (demo button).</li>
+                    <li>Basic <b>CSS3</b> animations and <b>Angular.JS</b> directives were used to add card flips and vanishing effects.</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="calcModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                The Pink Calculator
+            </div>
+            <div class="modal-body">
+                <p class="description">A simple and easy to use calculator that will account for imperfect input by the user.</p>
+                <ul>Technologies Used
+                    <li><b>JavaScript, jQuery, CSS3, HTML5</b></li>
+                    <li>Utilized <b>Javascript</b> and <b>jQuery</b> to build the foundation of the calculator.</li>
+                    <li>Utilized <b>jQuery</b> was utilized to receive user input and store the data.</li>
+                    <li><b>JavaScript</b> was used to take the data received from the DOM input and perform calculations.</li>
+                    <li><b>HTML5</b> and <b>CSS3</b> were used to add images and the calculator to the DOM.</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="mbModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                mBoutique
+            </div>
+            <div class="modal-body">
+                <p class="description">A delicious mock macaron website that utilizes PHP dynamic body injection.</p>
+                <ul>Technologies Used
+                    <li><b>PHP, JavaScript, CSS3, HTML5</b></li>
+                    <li>Utilized <b>PHP</b> and <b>JavaScript</b> to create the functionality of the website.</li>
+                    <li>Used <b>PHP's</b> include method to inject the body section of the page.</li>
+                    <li>Intricate <b>CSS3</b> positioning and selector methods were utilized to create the aesthetics of the page</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="faModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                Friendly Adventures
+            </div>
+            <div class="modal-body">
+                <p class="description">An application that takes users on an adventure to meet new people and have a great time!</p>
+                <ul>Technologies Used
+                    <li><b>jQuery, JavaScript, HTML5, CSS3</b></li>
+                    <li>This application utilizes four <b>API</b>'s <b>Javascript</b>, and <b>jQuery</b>.</li>
+                    <li>Google Maps, Google Places, Flickr, and Name Generator were the <b>API</b>'s utilized for this application.</li>
+                    <li>Received the requested data using <b>jQuery</b>'s ajax method and stored the data to manipulate for later use</li>
+                    <li><b>jQuery</b> allowed for dynamic <b>DOM</b> creation in which we were able to configure the data and display it to the user.</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="sgtModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                Student Grade Table
+            </div>
+            <div class="modal-body">
+                <p class="description">An educational application that allows the user to create, delete, add, and refresh data from a database.</p>
+                <ul>Technologies Used
+                    <li><b>PHP, MySQL, Javascript, jQuery, HTML5, Bootstrap</b></li>
+                    <li>This application was built with <b>PHP</b> and <b>mySQL</b> as the backbone of functionality.</li>
+                    <li><b>PHP</b> was utilized to send,receive, and sort the data from the <b>mySQL</b> database.</li>
+                    <li><b>JavaScript</b> and <b>jQuery</b> functions were created and used to display the data to the DOM accordingly. </li>
+                    <li>Utilized <b>Bootstrap</b> for the aesthetics and layout of the application.</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="tttModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                Tic Tac Toe
+            </div>
+            <div class="modal-body">
+                <p class="description">A simple Tic-Tac-Toe game that needs no explanation! Match three in a row to win!</p>
+                <ul>Technologies Used
+                    <li><b>JavaScript OOP, jQuery, HTML5, CSS3</b></li>
+                    <li><b>JavaScript OOP</b> methods were used to create the board and functionality of the game.</li>
+                    <li><b>jQuery</b> was used to dynamically create the board and append to the DOM</li>
+                    <li><b>HTML5</b> and <b>CSS3</b> were used to add the aesthetic value to the application.</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
-
-<!--
- <div class="pic_and_links">
-                <div class="contact_me_form">
-
-                </div>
-                <div class="picture">
-                    <img src="images/profile.jpg" alt="picture of me">
-                </div>
-                <div class="my_contact_info">
-
-                </div>
-            </div>
--->
