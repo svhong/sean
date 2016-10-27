@@ -59,7 +59,10 @@ function send_mail(){
             'Body': $('#body').val()
         },
         success: function(){
-            console.log('email has been sent');
+            $('.mailer_message').css('color','green').text('Email successfully sent!')
+        },
+        error: function(){
+            $('.mailer_message').css('color','red').text('Email was not sent')
         }
     });
 }
