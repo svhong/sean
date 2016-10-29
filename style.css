@@ -639,7 +639,7 @@ input {
         overflow: hidden;
         font-size: initial;
     }
-    .front_text > img {
+    .front_text img {
         height: 50%;
         width: 100%;
     }
