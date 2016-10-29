@@ -160,6 +160,9 @@ body {
     box-shadow: 0 4px 8px 0 #888888;
 }
 
+.mobile_message {
+    display: none;
+}
 /*************************EXPERIENCE LINK CSS****************************************************/
 .div2 {
     height:90%;
@@ -510,6 +513,16 @@ input {
     .navbar-custom .navbar-nav {
         left:10%;
     }
+
+    .mobile_message {
+        display: inline;
+        background: #5896b1;
+        color: #ECF0F1;
+        position: fixed;
+        bottom: 15px;
+        left: 205px;
+        z-index: 1;
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -674,6 +687,15 @@ input {
     .front_text img {
         height: 50%;
         width: 100%;
+    }
+    .mobile_message {
+        display: inline;
+        background: #5896b1;
+        color: #ECF0F1;
+        position: fixed;
+        bottom: 15px;
+        left: 205px;
+        z-index: 1;
     }
 }
 
