@@ -22,7 +22,10 @@ body {
 
 .navbar-custom {
     background: #5896b1;
-    opacity: 0.8;
+    opacity: 0.85;
+    -webkit-box-shadow: 0 4px 2px -2px #888888;
+    -moz-box-shadow: 0 4px 2px -2px #888888;
+    box-shadow: 0 4px 3px -1px #888888;
 }
 
 .navbar-custom .navbar-toggle {
