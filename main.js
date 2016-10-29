@@ -1,7 +1,7 @@
 $(document).ready(function(){
-    // $(window).on('load', function() {
-    //     $('body').animate({scrollTop:0}, 650)
-    // });
+    $(window).on('load', function() {
+        $('body').animate({scrollTop:0}, 650)
+    });
     var $pages = $(".pages"),
         tot = $pages.length,
         current = 0, pagePos = 0, down = 0, listen = true;
@@ -41,15 +41,14 @@ $(document).ready(function(){
         send_mail();
         clear_input();
     });
-    $('.test').click(function(){
-        if($(this).hasClass('shrink_icon')){
-            $(this).removeClass('shrink_icon').addClass('experience')
-        } else {
-            $(this).removeClass('experience').addClass('shrink_icon');
-            console.log('added shrink_icon class')
-        }
-
-    })
+    $('.experience').click(function(){
+        var show_modal = $(this).attr('id') + '_modal';
+        $('#'+show_modal).modal('show')
+    });
+    $('.apps').click(function(){
+        var show_modal = $(this).attr('id') + 'Modal';
+        $('#'+show_modal).modal('show')
+    });
 });
 function send_mail(){
     $.ajax({
@@ -63,7 +62,10 @@ function send_mail(){
             'Body': $('#body').val()
         },
         success: function(){
-            console.log('email has been sent');
+            $('.mailer_message').css('color','green').text('Email successfully sent!')
+        },
+        error: function(){
+            $('.mailer_message').css('color','red').text('Email was not sent')
         }
     });
 }
@@ -75,5 +77,4 @@ function clear_input(){
     $('#subject').val('');
     $('#body').val('');
 }
-
 

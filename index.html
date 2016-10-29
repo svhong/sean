@@ -21,12 +21,13 @@
 <!-------------------------------------------navigator bar------------------------------------->
 <nav class="nav navbar-custom navbar-fixed-top" id="navibar">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigationbar" aria-expanded="false">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigationbar"
+                aria-expanded="false">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="http://www.seanhongdev.com">Sean Hong</a>
+        <a class="navbar-brand" href="http://www.seanhongdev.com" id="brand">Sean Hong</a>
     </div>
     <div class="collapse navbar-collapse" id="navigationbar">
         <ul class="nav navbar-nav">
@@ -40,13 +41,31 @@
 </nav>
 <div id="main">
     <div class="pages div1">
+        <div class="grad_header"></div>
+        <div class="front_text">
+            <img src="images/seanhongdevtext.png" alt="front page text">
+        </div>
         <div class="front_page">
             <img src="images/seanhongdev.jpg" alt="front page picture">
         </div>
+        <div class="grad_footer"></div>
     </div>
     <div class="pages div2">
         <h1>Experience</h1>
-        <div class="test experience">LFZ</div>
+        <div class="exp_cont">
+            <div class="experience" id="lfz">
+                <img src="images/lfz.jpg" alt="learningfuze">
+            </div>
+            <div class="experience" id="ups">
+                <img src="images/ups.png" alt="universal">
+            </div>
+            <div class="experience" id="nsls">
+                <img src="images/nsls.jpg" alt="sigma alpha pi">
+            </div>
+            <div class="experience" id="rotc">
+                <img src="images/rotc.jpg" alt="reserve officers training corp">
+            </div>
+        </div>
     </div>
     <div class="pages div3">
         <div class="skills_container">
@@ -159,95 +178,300 @@
         </div>
     </div>
     <div class="pages div4">
-        <h1>My Applications</h1>
-            <div class="app">
-                <h5>Memory Match</h5>
-            <img src="images/bttf.jpg" alt="Memory Match Picture">
-            <div class="links">
-                <a href="http://memory_match.seanhongdev.com">Live Demo</a>
-                <p>|</p>
-                <a href="https://github.com/svhong/memorymatch.git">GitHub</a>
+        <h1>Applications</h1>
+        <div class="app_cont">
+            <div class="apps" id="mm">
+                <img class="apps_img" src="images/bttf.jpg" alt="Memory Match">
+                <div class="text">Memory Match</div>
             </div>
-        </div>
-        <div class="app">
-            <h5>Calculator</h5>
-            <img src="images/calc.jpg" alt="Calculator Image">
-            <div class="links">
-                <a href="">Live Demo</a>
-                <p>|</p>
-                <a href="">GitHub</a>
+            <div class="apps" id="sgt">
+                <img class="apps_img" src="images/sgt.jpg" alt="Student Grade Table">
+                <div class="text">Student Grade Table</div>
             </div>
-        </div>
-        <div class="app">
-            <h5>JS Snippets</h5>
-            <img src="images/bttf.jpg" alt="JavaScript Image">
-            <div class="links">
-                <a href="">Live Demo</a>
-                <p>|</p>
-                <a href="">GitHub</a>
+            <div class="apps" id="mb">
+                <img class="apps_img" src="images/mboutique.jpg" alt="mBoutique">
+                <div class="text">mBoutique</div>
             </div>
-        </div>
-        <div class="app">
-            <h5>Blind Date</h5>
-            <img src="images/blinddate.jpg" alt="Blind Date Image">
-            <div class="links">
-                <a href="">Live Demo</a>
-                <p>|</p>
-                <a href="">GitHub</a>
-            </div>
-        </div>
-        <div class="app">
-            <h5>Student Grade Table</h5>
-            <img src="images/sgt.jpg" alt="SGT Image">
-            <div class="links">
-                <a href="">Live Demo</a>
-                <p>|</p>
-                <a href="">GitHub</a>
-            </div>
-        </div>
-        <div class="app">
-            <h5>Tic-Tac-Toe</h5>
-            <img src="images/ttt.jpg" alt="Tic-Tac-Toe Image">
-            <div class="links">
-                <a href="">Live Demo</a>
-                <p>|</p>
-                <a href="">GitHub</a>
+            <div class="apps" id="calc">
+                <img class="apps_img" src="images/calculator.jpg" alt="Calculator app">
+                <div class="text">Calculator</div>
             </div>
         </div>
     </div>
     <div class="pages div5">
         <h1>Contact Me</h1>
         <div class="about_me_content">
-            <div class="about_me">Hello! My name is Sean Hong. I am a front end web developer currently seeking an opportunity to join a team of like minded individuals and expand my knowledge! I am a father to 3 beautiful girls and I love what I do! I have pursued many different things in life, but nothing has my passion burning like coding! I love solving problems and finding new ways to make things more efficient! I grew up in Hawaii and now my family and I currently reside in Orange County! I love martial arts, hiking, riding my motorcycle, grilling poolside, and creating JavaScript functions! Use the Contact area to say hi!</div>
-            <div class="pic_and_links">
-                <div class="contact_me_form">
-                    <form method="post" action="mail_handler.php">
-                        NAME
-                        <input id="name" name="name" placeholder="Your name">
-                        <br>
-                        EMAIL
-                        <input id="email" name="email" placeholder="Your email address">
-                        <br>
-                        SUBJECT
-                        <input id="subject" name="subject" placeholder="Subject">
-                        <br>
-                    </form>
-                </div>
-                <div class="picture">
-                    <img src="images/profile.jpg" alt="picture of me">
-                </div>
-                <div class="my_contact_info">
+            <div class="about_me">Hello! My name is Sean Hong. I am a front end web developer currently seeking an
+                opportunity to join a team of like minded individuals and expand my knowledge. I am a father to 3
+                beautiful girls and I love what I do! I have pursued many different things in life, but nothing has my
+                passion burning like coding. I love solving problems and finding new ways to make things more efficient!
+                I grew up in Hawaii and now my family and I currently reside in Orange County. I love martial arts,
+                hiking, riding my motorcycle, grilling poolside, and creating JavaScript functions. Use the Contact area
+                to say hi!
+            </div>
+            <div class="pic"></div>
+            <div class="contact_me_form">
+                <form method="post" action="mail_handler.php">
+                    NAME
+                    <input id="name" name="name" placeholder="Your name">
+                    <br>
+                    EMAIL
+                    <input id="email" name="email" placeholder="Your email address">
+                    <br>
+                    SUBJECT
+                    <input id="subject" name="subject" placeholder="Subject">
+                    <br>
+                    <br>
                     <textarea id="body" name="body" maxlength="500" placeholder="Enter your message!"></textarea>
                     <button id="send_mail_button" class="btn btn-default" type="button" name="submit" value="submit">
                         Send Mail
                     </button>
                     <div id="char_remaining">500 Characters
                     </div>
-                </div>
+                    <div class="mailer_message"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--MODALS-->
+<!--LFZ MODAL-->
+<div class="modal fade" id="lfz_modal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                LearningFuze [2016] - [Present]
+            </div>
+            <div class="modal-body">
+                <ul>Accelerated Web Development Program
+                    <li>Remote Teaching Assistant</li>
+                    <li>Review, debug and evaluate code prototypes to confirm standards are met, prototypes are functional, and provide constructive feedback.</li>
+                    <li>Assist current students in expanding their knowledge.</li>
+                    <li>Collaborate with team members in creating applications.</li>
+                    <li>Utilized various frameworks and languages to build applications.</li>
+                    <li>Participated and utilized SCRUM process to incorporate and eliminate ideas.</li>
+                    <li>Learned best practices to develop clean and efficient code.</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--UPS MODAL-->
+<div class="modal fade" id="ups_modal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                UNIVERSAL PROTECTION SERVICE [2015 - 2016]
+            </div>
+            <div class="modal-body">
+                <ul>Security Officer for Fashion Island @ Newport Beach
+
+                    <li>Effectively communicated with team members to report various activities within the property
+                    </li>
+                    <li>
+                        Cooperated with local law enforcement and first responders to provide information and assistance
+                    </li>
+                    <li>
+                        Patrol the inner and outer perimeter of property during after hours
+                    </li>
+                    <li>
+                        Monitor surveillance room, report and log activities taking place on the property
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--NSLS MODAL-->
+<div class="modal fade" id="nsls_modal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                National Society of Leadership and Success [2014 - 2015]
+            </div>
+            <div class="modal-body">
+                <ul>Vice President of SIUE Chapter
+                    <li>Collaborate with executive board to plan, coordinate, and execute events</li>
+                    <li>Manage attendance of inductees and oversee society events</li>
+                    <li>Provide accurate information to future inductees and members</li>
+                    <li>Substitute duties in absence of Society President</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--ROTC MODAL-->
+<div class="modal fade" id="rotc_modal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                U.S. Army ROTC [2012 - 2014]
+            </div>
+            <div class="modal-body">
+                <ul>Southern Illinois University Edwardsville Army ROTC
+                    <li>Lead teams and cadets during training exercises</li>
+                    <li>Manage time and skills to plan and execute training operations</li>
+                    <li>Used various problem solving techniques to strengthen teamwork and complete missions</li>
+                    <li>Recipient of American Legion Scholastic Silver Award</li>
+                    <li>Captain of SIUE ROTC Color Guard</li>
+                    <li>Outstanding Volunteer Award</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Application Modals -->
+<div class="modal fade" id="mmModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                Memory Match
+            </div>
+            <div class="modal-body">
+                <p class="description">A simple card memory match game with an awesome theme. Match the cards to go "Back To The Future!"</p>
+                <ul>Technologies Used
+                    <li><b>Angular.JS, jQuery, JavaScript, HTML5, CSS3, Bootstrap</b></li>
+                    <li><b>Angular.JS</b> was utilized as the framework and manages the logic of the game.</li>
+                    <li><b>jQuery</b> and <b>Angular.JS</b> were used to dynamically create the cards and randomize them on the board.</li>
+                    <li><b>HTML5</b> and <b>CSS3</b> was utilized to create the final winning effect (demo button).</li>
+                    <li>Basic <b>CSS3</b> animations and <b>Angular.JS</b> directives were used to add card flips and vanishing effects.</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" onclick="window.open('http://memory_match.seanhongdev.com')">Live Demo</button>
+                <button type="button" class="btn btn-warning" onclick="window.open('https://github.com/svhong/memorymatch.git')">Github</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="calcModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                The Pink Calculator
+            </div>
+            <div class="modal-body">
+                <p class="description">A simple and easy to use calculator that will account for imperfect input by the user.</p>
+                <ul>Technologies Used
+                    <li><b>JavaScript, jQuery, CSS3, HTML5</b></li>
+                    <li>Utilized <b>Javascript</b> and <b>jQuery</b> to build the foundation of the calculator.</li>
+                    <li>Utilized <b>jQuery</b> was utilized to receive user input and store the data.</li>
+                    <li><b>JavaScript</b> was used to take the data received from the DOM input and perform calculations.</li>
+                    <li><b>HTML5</b> and <b>CSS3</b> were used to add images and the calculator to the DOM.</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" onclick="window.open('http://pinkulator.seanhongdev.com')">Live Demo</button>
+                <button type="button" class="btn btn-warning" onclick="window.open('https://github.com/svhong/my_calculator.git')">Github</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="mbModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                mBoutique
+            </div>
+            <div class="modal-body">
+                <p class="description">A delicious mock macaron website that utilizes PHP dynamic body injection.</p>
+                <ul>Technologies Used
+                    <li><b>PHP, JavaScript, CSS3, HTML5</b></li>
+                    <li>Utilized <b>PHP</b> and <b>JavaScript</b> to create the functionality of the website.</li>
+                    <li>Used <b>PHP's</b> include method to inject the body section of the page.</li>
+                    <li>Intricate <b>CSS3</b> positioning and selector methods were utilized to create the aesthetics of the page</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" onclick="window.open('http://mboutique.seanhongdev.com/main.php')">Live Demo</button>
+                <button type="button" class="btn btn-warning" onclick="window.open('https://github.com/svhong/my_mboutique.git')">Github</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="faModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                Friendly Adventures
+            </div>
+            <div class="modal-body">
+                <p class="description">An application that takes users on an adventure to meet new people and have a great time!</p>
+                <ul>Technologies Used
+                    <li><b>jQuery, JavaScript, HTML5, CSS3</b></li>
+                    <li>This application utilizes four <b>API</b>'s <b>Javascript</b>, and <b>jQuery</b>.</li>
+                    <li>Google Maps, Google Places, Flickr, and Name Generator were the <b>API</b>'s utilized for this application.</li>
+                    <li>Received the requested data using <b>jQuery</b>'s ajax method and stored the data to manipulate for later use</li>
+                    <li><b>jQuery</b> allowed for dynamic <b>DOM</b> creation in which we were able to configure the data and display it to the user.</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" onclick="window.open('https://github.com/svhong/friendly_adventures.git')">Github</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="sgtModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                Student Grade Table
+            </div>
+            <div class="modal-body">
+                <p class="description">An educational application utilizing C.R.U.D.(Create, Read, Update, and Delete) operations to edit students to a custom made MySQL database.</p>
+                <ul>Technologies Used
+                    <li><b>PHP, MySQL, Javascript, jQuery, HTML5, Bootstrap</b></li>
+                    <li>This application was built with <b>PHP</b> and <b>MySQL</b> as the backbone of functionality.</li>
+                    <li><b>PHP</b> was utilized to send,receive, and sort the data from the <b>MySQL</b> database.</li>
+                    <li><b>JavaScript</b> and <b>jQuery</b> functions were created and used to display the data to the DOM accordingly. </li>
+                    <li>Utilized <b>Bootstrap</b> for the aesthetics and layout of the application.</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" onclick="window.open('http://sgt.seanhongdev.com')">Live Demo</button>
+                <button type="button" class="btn btn-warning" onclick="window.open('https://github.com/svhong/student_grade_table.git')">Github</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="tttModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                Tic Tac Toe
+            </div>
+            <div class="modal-body">
+                <p class="description">A simple Tic-Tac-Toe game that needs no explanation! Match three in a row to win!</p>
+                <ul>Technologies Used
+                    <li><b>JavaScript OOP, jQuery, HTML5, CSS3</b></li>
+                    <li><b>JavaScript OOP</b> methods were used to create the board and functionality of the game.</li>
+                    <li><b>jQuery</b> was used to dynamically create the board and append to the DOM</li>
+                    <li><b>HTML5</b> and <b>CSS3</b> were used to add the aesthetic value to the application.</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" onclick="window.open('http://tictactoe.seanhongdev.com')">Live Demo</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
 </div>
 </body>
 </html>
-
