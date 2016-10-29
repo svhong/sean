@@ -132,7 +132,7 @@ body {
 
 }
 .fixed_cont {
-    height: 6%;
+    height: 50px;
     width: 165px;
     position: fixed;
     z-index: 1;
