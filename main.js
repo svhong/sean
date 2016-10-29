@@ -1,7 +1,7 @@
 $(document).ready(function(){
-    $(window).on('load', function() {
-        $('body').animate({scrollTop:0}, 650)
-    });
+    // $(window).on('load', function() {
+    //     $('body').animate({scrollTop:0}, 650)
+    // });
     var $pages = $(".pages"),
         tot = $pages.length,
         current = 0, pagePos = 0, down = 0, listen = true;
@@ -45,7 +45,10 @@ $(document).ready(function(){
         var show_modal = $(this).attr('id') + '_modal';
         $('#'+show_modal).modal('show')
     });
-    $('brand')
+    $('.apps').click(function(){
+        var show_modal = $(this).attr('id') + 'Modal';
+        $('#'+show_modal).modal('show')
+    });
 });
 function send_mail(){
     $.ajax({
@@ -74,5 +77,4 @@ function clear_input(){
     $('#subject').val('');
     $('#body').val('');
 }
-
 

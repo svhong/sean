@@ -109,9 +109,24 @@ body {
     transform: translate(-50%);
 }
 
-.front_text > img {
+.front_text img:hover {
+    transform:scale(1.5);
+    -webkit-transition-duration: 5s;
+    -moz-transition-duration: 5s;
+    -ms-transition-duration: 5s;
+    -o-transition-duration: 5s;
+    transition-duration: 5s;
+}
+
+.front_text img {
     height:100%;
     width:100%;
+    -webkit-transition-duration: 5s;
+    -moz-transition-duration: 5s;
+    -ms-transition-duration: 5s;
+    -o-transition-duration: 5s;
+    transition-duration: 5s;
+
 }
 /*************************EXPERIENCE LINK CSS****************************************************/
 .div2 {
@@ -121,21 +136,41 @@ body {
     text-align: center;
 }
 
+.exp_cont {
+    height: 100%;
+    width: 100%;
+}
+
 .experience {
     height: 35%;
     width: 30%;
     display: inline-block;
     margin:1% 5% 0 0;
-    border: 5px solid #5896b1;
+    border: 6px solid #5896b1;
     cursor: pointer;
-    border-radius: 12px;
+    border-radius: 10px;
     box-shadow: 3px 3px 7px #888888;
+}
+
+.experience img:hover {
+    filter: none;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;;
 }
 
 .experience img {
     height:100%;
     width: 100%;
     border-radius: 5px;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    filter: blur(3px);
 }
 /***************************SKILLS LINK CSS********************************************/
 .div3 {
@@ -269,40 +304,56 @@ body {
     margin-top: 65px;
     text-align: center;
 }
-
-.app {
-    display: inline-block;
-    height:37%;
-    width: 30%;
-    background: #5896b1;
-    color: #ECF0F1;
-    border-radius: 5px;
-    box-shadow: 3px 3px 7px #888888;
-}
-
-.app_cont > img {
-    height:70%;
-    max-width:90%;
-}
-
 .app_cont {
-    height:90%;
+    height:100%;
     width:100%;
 }
-
-.links a,p {
+.apps {
+    height: 35%;
+    width: 30%;
     display: inline-block;
+    margin:1% 5%;
+    border: 6px solid #5896b1;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px #888888;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
 
 }
 
-.links a:hover, a:active, a:visited, a:link {
+.apps:hover .apps_img {
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -ms-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    filter:none;
+    transform: scale(1.1);
+
+}
+
+.apps_img {
+    height:100%;
+    width: 100%;
+    filter: grayscale(100%);
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -ms-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+}
+.text{
+    width:100%;
+    position: absolute;
+    font-size:1.5em;
+    top: 45%;
     color: #ECF0F1;
+    text-shadow: 2px 2px 2px black;
 }
 
-.app_cont > h5 {
-    font-weight: bold;
-    margin: 5px 0;
-}
+
 /***************************CONTACT ME LINK CSS********************************************/
 
 .div5 {
@@ -434,23 +485,20 @@ input {
         margin: 0 2% 0 2%;
     }
 
-    .app {
+    .apps {
+        height: 35%;
+        width: 30%;
         display: inline-block;
-        height:40%;
-        width:30%;
-        margin-top: 1%;
+        margin: 2% 5%;
+        border: 6px solid #5896b1;
+        cursor: pointer;
+        border-radius: 10px;
+        box-shadow: 3px 3px 7px #888888;
     }
     .links {
         margin-top: 0.5%;
     }
-    .app_cont {
-        height:100%;
-        width:100%;
-    }
-    .app_cont > h5 {
-        font-weight: bold;
-        margin: 15px 0;
-    }
+
     .about_me {
         width:30%;
         height:100%;
@@ -477,9 +525,10 @@ input {
         height: 35%;
         width: 30%;
         display: inline-block;
-        margin: 3% 5% 0 0;
+        margin: 2% 5%;
         border: 5px solid #5896b1;
         cursor: pointer;
+        border-radius: 10px;
     }
     .contact_me_form {
         height: 85%;
@@ -532,11 +581,15 @@ input {
         animation: fade_in 4s;
     }
 
-    .app {
+    .apps {
+        height: 30%;
+        width: 45%;
         display: inline-block;
-        height:25%;
-        width:45%;
-        margin-top: 5%;
+        margin:10% 1%;
+        border: 5px solid #5896b1;
+        cursor: pointer;
+        border-radius: 10px;
+        box-shadow: 3px 3px 7px #888888;
     }
 
     .about_me_content {
@@ -562,7 +615,7 @@ input {
         height: 30%;
         width: 45%;
         display: inline-block;
-        margin: 10% 1% 0 0;
+        margin: 10% 1%;
         border: 5px solid #5896b1;
         cursor: pointer;
     }
@@ -570,7 +623,6 @@ input {
         width: 90%;
         height: 50%;
         display: inline-block;
-        /* overflow: hidden; */
         opacity: 0.4;
         background: url(images/profile.jpg) no-repeat;
         background-size: cover;
@@ -586,6 +638,10 @@ input {
         text-align: left;
         overflow: hidden;
         font-size: initial;
+    }
+    .front_text > img {
+        height: 50%;
+        width: 100%;
     }
 }
 
