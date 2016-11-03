@@ -1,26 +1,61 @@
+var current = 0;
+var pagePos = 0;
+var down = 0;
+var scroll_listen = true;
+function send_mail(){
+    $.ajax({
+        url: 'mail_handler.php',
+        type: 'post',
+        dataType:'text',
+        data:{
+            'From': $('#email').val(),
+            'FromName': $('#name').val(),
+            'Subject': $('#subject').val(),
+            'Body': $('#body').val()
+        },
+        success: function(){
+            $('.mailer_message').css('color','green').text('Email successfully sent!')
+        },
+        error: function(){
+            $('.mailer_message').css('color','red').text('Email was not sent')
+        }
+    });
+}
+
+function clear_input(){
+    console.log('clearing input fields');
+    $('#email').val('');
+    $('#name').val('');
+    $('#subject').val('');
+    $('#body').val('');
+}
 $(document).ready(function(){
     $(window).on('load', function() {
-        $('body').animate({scrollTop:0}, 650)
+        $('html, body').animate({scrollTop:0}, 650)
     });
-    var $pages = $(".pages"),
-        tot = $pages.length,
-        current = 0, pagePos = 0, down = 0, listen = true;
+    var $pages = $(".pages");
+    var tot = $pages.length;
     $('body').on('DOMMouseScroll mousewheel', function(e) {
         e.preventDefault();
-        if(!listen)return;
-        listen = false;
-        down = e.originalEvent.detail > 0 || e.originalEvent.wheelDelta < 0;
-        current = Math.min(Math.max(0, down ? ++current : --current), tot-1);
-        pagePos = $pages.eq(current).offset().top - 65;
-        $(this).stop().animate({scrollTop: pagePos}, 650, function(){
-            listen = true;
-        });
+        console.log('mousescroll is registering');
+        if(scroll_listen === false ) {
+            return;
+        } else{
+            scroll_listen = false;
+            down = e.originalEvent.detail > 0 || e.originalEvent.wheelDelta < 0;
+            current = Math.min(Math.max(0, down ? ++current : --current), tot-1);
+            pagePos = $pages.eq(current).offset().top - 65;
+            console.log("pagePos: ", pagePos);
+            $('html, body').stop().animate({scrollTop: pagePos}, 650, function(){
+                scroll_listen = true;
+            });
+        }
     });
     $('.navbar-nav a').on('click', function(){
         var eq_value = this.getAttribute('class');
         var dom_to_scroll_to = $('.pages').eq(eq_value).offset().top - 65;
         current = eq_value;
-        $('body').animate({scrollTop: dom_to_scroll_to}, 650);
+        $('html, body').animate({scrollTop: dom_to_scroll_to}, 650);
     });
     $(window).scroll(function() {
         if (current == 2) {
@@ -50,31 +85,5 @@ $(document).ready(function(){
         $('#'+show_modal).modal('show')
     });
 });
-function send_mail(){
-    $.ajax({
-        url: 'mail_handler.php',
-        type: 'post',
-        dataType:'text',
-        data:{
-            'From': $('#email').val(),
-            'FromName': $('#name').val(),
-            'Subject': $('#subject').val(),
-            'Body': $('#body').val()
-        },
-        success: function(){
-            $('.mailer_message').css('color','green').text('Email successfully sent!')
-        },
-        error: function(){
-            $('.mailer_message').css('color','red').text('Email was not sent')
-        }
-    });
-}
 
-function clear_input(){
-    console.log('clearing input fields');
-    $('#email').val('');
-    $('#name').val('');
-    $('#subject').val('');
-    $('#body').val('');
-}
 
