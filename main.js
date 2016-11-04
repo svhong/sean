@@ -59,8 +59,6 @@ $(document).ready(function(){
         if (current == 2) {
             $('.bar').addClass('animate_bar');
 
-        } else {
-            $('.bar').removeClass('animate_bar');
         }
     });
     var max_length_for_textarea = 500;
