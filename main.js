@@ -37,7 +37,6 @@ $(document).ready(function(){
     var tot = $pages.length;
     $('body').on('DOMMouseScroll mousewheel', function(e) {
         e.preventDefault();
-        console.log('mousescroll is registering');
         if(scroll_listen === false ) {
             return;
         } else{
@@ -45,7 +44,6 @@ $(document).ready(function(){
             down = e.originalEvent.detail > 0 || e.originalEvent.wheelDelta < 0;
             current = Math.min(Math.max(0, down ? ++current : --current), tot-1);
             pagePos = $pages.eq(current).offset().top - 65;
-            console.log("pagePos: ", pagePos);
             $('html, body').stop().animate({scrollTop: pagePos}, 650, function(){
                 scroll_listen = true;
             });
