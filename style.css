@@ -270,7 +270,7 @@ body {
 
 /************************************METER BAR CSS*****************************************/
 .javascript {
-    width: 90%;
+    width: 98%;
     height: 10px;
     position: absolute;
     top:30%;
@@ -278,56 +278,56 @@ body {
 }
 
 .jquery {
-    width: 90%;
+    width: 98%;
     height: 10px;
     position: absolute;
     top:30%;
     left:1%;
 }
 .html {
-    width: 90%;
+    width: 98%;
     height: 10px;
     position: absolute;
     top:30%;
     left:1%;
 }
 .css {
-    width: 90%;
+    width: 98%;
     height: 10px;
     position: absolute;
     top:30%;
     left:1%;
 }
 .git {
-    width: 80%;
+    width: 98%;
     height: 10px;
     position: absolute;
     top:30%;
     left:1%;
 }
 .angular {
-    width: 70%;
+    width: 98%;
     height: 10px;
     position: absolute;
     top:30%;
     left:1%;
 }
 .bootstrap {
-    width: 80%;
+    width: 98%;
     height: 10px;
     position: absolute;
     top:30%;
     left:1%;
 }
 .oop {
-    width: 80%;
+    width: 98%;
     height: 10px;
     position: absolute;
     top:30%;
     left:1%;
 }
 .php {
-    width: 70%;
+    width: 98%;
     height: 10px;
     position: absolute;
     top:30%;
