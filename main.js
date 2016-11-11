@@ -50,12 +50,20 @@ $(document).ready(function(){
         }
     });
     $('.navbar-nav a').on('click', function(){
+        $('nav').find('#active').removeAttr('id','active');
+        $(this).attr('id','active');
         var eq_value = this.getAttribute('class');
         var dom_to_scroll_to = $('.pages').eq(eq_value).offset().top - 65;
         current = eq_value;
         $('html, body').animate({scrollTop: dom_to_scroll_to}, 650);
     });
     $(window).scroll(function() {
+        if (current == 1){
+            console.log('In blur true branch');
+            $('.experience img').addClass('unblur');
+        } else {
+            $('.experience img').removeClass('unblur');
+        }
         if (current == 2) {
             $('.bar').addClass('animate_bar');
 
