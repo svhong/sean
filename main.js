@@ -2,6 +2,7 @@ var current = 0;
 var pagePos = 0;
 var down = 0;
 var scroll_listen = true;
+var max_length_for_textarea = 500;
 function send_mail(){
     $.ajax({
         url: 'mail_handler.php',
@@ -29,6 +30,39 @@ function clear_input(){
     $('#subject').val('');
     $('#body').val('');
 }
+
+$(window).scroll(function() {
+    var nav_selector = $('nav');
+    var exp_img_selector = $('.experience img');
+    var page_num = $('.' + current);
+    if(page_num.attr('id') !== 'active'){
+        switch (current){
+            case 0:
+                nav_selector.find('#active').removeAttr('id','active');
+                page_num.attr('id','active');
+                exp_img_selector.removeClass('unblur');
+                break;
+            case 1:
+                nav_selector.find('#active').removeAttr('id','active');
+                page_num.attr('id','active');
+                exp_img_selector.addClass('unblur');
+                break;
+            case 2:
+                nav_selector.find('#active').removeAttr('id','active');
+                page_num.attr('id','active');
+                exp_img_selector.removeClass('unblur');
+                break;
+            case 3:
+                nav_selector.find('#active').removeAttr('id','active');
+                page_num.attr('id','active');
+                break;
+            case 4:
+                nav_selector.find('#active').removeAttr('id','active');
+                page_num.attr('id','active');
+                break;
+        }
+    }
+});
 $(document).ready(function(){
     $(window).on('load', function() {
         $('html, body').animate({scrollTop:0}, 650)
@@ -50,19 +84,13 @@ $(document).ready(function(){
         }
     });
     $('.navbar-nav a').on('click', function(){
+        $('nav').find('#active').removeAttr('id','active');
+        $(this).attr('id','active');
         var eq_value = this.getAttribute('class');
         var dom_to_scroll_to = $('.pages').eq(eq_value).offset().top - 65;
         current = eq_value;
         $('html, body').animate({scrollTop: dom_to_scroll_to}, 650);
     });
-    $(window).scroll(function() {
-        if (current == 2) {
-            $('.bar').addClass('animate_bar');
-
-        }
-    });
-    var max_length_for_textarea = 500;
-
     $('#body').keyup(function(){
         var length = $(this).val().length;
         var remaining_length = max_length_for_textarea - length;
