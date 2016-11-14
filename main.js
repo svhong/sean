@@ -40,17 +40,14 @@ $(window).scroll(function() {
             case 0:
                 nav_selector.find('#active').removeAttr('id','active');
                 page_num.attr('id','active');
-                exp_img_selector.removeClass('unblur');
                 break;
             case 1:
                 nav_selector.find('#active').removeAttr('id','active');
                 page_num.attr('id','active');
-                exp_img_selector.addClass('unblur');
                 break;
             case 2:
                 nav_selector.find('#active').removeAttr('id','active');
                 page_num.attr('id','active');
-                exp_img_selector.removeClass('unblur');
                 break;
             case 3:
                 nav_selector.find('#active').removeAttr('id','active');
@@ -60,6 +57,14 @@ $(window).scroll(function() {
                 nav_selector.find('#active').removeAttr('id','active');
                 page_num.attr('id','active');
                 break;
+        }
+        if (current === 1){
+            exp_img_selector.addClass('unblur');
+        } else {
+            exp_img_selector.removeClass('unblur');
+        }
+        if (current === 2){
+            $('.bar').addClass('animate_bar');
         }
     }
 });
