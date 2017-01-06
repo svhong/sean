@@ -33,7 +33,7 @@ function clear_input(){
 
 $(window).scroll(function() {
     var nav_selector = $('nav');
-    var exp_img_selector = $('.experience img');
+    // var exp_img_selector = $('.experience img');
     var page_num = $('.' + current);
     if (current == 1) {
         exp_img_selector.addClass('unblur');
@@ -48,18 +48,17 @@ $(window).scroll(function() {
             case 0:
                 nav_selector.find('#active').removeAttr('id','active');
                 page_num.attr('id','active');
-                exp_img_selector.removeClass('unblur');
+                // exp_img_selector.removeClass('unblur');
                 break;
             case 1:
                 nav_selector.find('#active').removeAttr('id','active');
                 page_num.attr('id','active');
-                exp_img_selector.addClass('unblur');
+                // exp_img_selector.addClass('unblur');
                 break;
             case 2:
                 nav_selector.find('#active').removeAttr('id','active');
                 page_num.attr('id','active');
-                exp_img_selector.removeClass('unblur');
-                $('.bar').addClass('animate_bar');
+                // exp_img_selector.removeClass('unblur');
                 break;
             case 3:
                 nav_selector.find('#active').removeAttr('id','active');
@@ -72,6 +71,45 @@ $(window).scroll(function() {
         }
     }
 });
+function fadename(){
+    var fade_letters = ['S','E','A','N',' ','H','O','N','G'];
+    var elements = [];
+    for(var i = 0; i < fade_letters.length; i++){
+        elements.push($("<span>").addClass("letters").css({
+            'animation-duration': (Math.random()*10)/2+1+'s'
+        }).text(fade_letters[i]))
+    }
+    $('.front_name').append(elements);
+}
+
+
+function fadetitle(){
+    var fade_letters = ['f','r','o','n','t',' ','e','n','d',' ','d','e','v','e','l','o','p','e','r'];
+    var elements = [];
+    for(var i = 0; i < fade_letters.length; i++){
+        elements.push($("<span>").addClass("letters").css({
+            'animation-duration': (Math.random()*8)/2+1+'s'
+        }).text(fade_letters[i]))
+    }
+    $('.front_title').append(elements);
+}
+
+function fadeemail(){
+    var fade_letters = ['W','R','I','T','E','S','E','A','N','H','O','N','G','@','G','M','A','I','L','.','C','O','M'];
+    var elements = [];
+    for(var i = 0; i < fade_letters.length; i++){
+        elements.push($("<span>").addClass("letters my_mail").css({
+            'animation-duration': (Math.random()*7)/2+1+'s'
+        }).text(fade_letters[i]))
+    }
+    $('.front_email').append(elements);
+}
+
+function fade_title(){
+    fadename();
+    fadetitle();
+    fadeemail();
+}
 $(document).ready(function(){
     $(window).on('load', function() {
         $('html, body').animate({scrollTop:0}, 650)
@@ -117,6 +155,7 @@ $(document).ready(function(){
         var show_modal = $(this).attr('id') + 'Modal';
         $('#'+show_modal).modal('show')
     });
+    fade_title();
 });
 
 
