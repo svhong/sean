@@ -35,14 +35,14 @@ $(window).scroll(function() {
     var nav_selector = $('nav');
     // var exp_img_selector = $('.experience img');
     var page_num = $('.' + current);
-    if (current == 1) {
-        exp_img_selector.addClass('unblur');
-    } else {
-        exp_img_selector.removeClass('unblur');
-    }
-    if (current == 2){
-        $('.bar').addClass('animate_bar');
-    }
+    // if (current == 1) {
+    //     exp_img_selector.addClass('unblur');
+    // } else {
+    //     exp_img_selector.removeClass('unblur');
+    // }
+    // if (current == 2){
+    //     $('.bar').addClass('animate_bar');
+    // }
     if(page_num.attr('id') !== 'active'){
         switch (current){
             case 0:
