@@ -118,7 +118,7 @@ body {
 }
 
 .letters {
-    font-family: Calibri,Arial;
+    font-family: Muli,Arial;
     animation-name: fadeit;
     animation-timing-function: ease-in-out;
 }
@@ -554,7 +554,6 @@ input {
     .navbar-custom .navbar-nav {
         left:10%;
     }
-
     .mobile_message {
         display: inline;
         background: #333333;
@@ -564,6 +563,55 @@ input {
         left: 205px;
         z-index: 1;
     }
+    .front_name {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        height: 22vh;
+        width: 75vw;
+        left: 50%;
+        top: 2%;
+        transform: translate(-50%);
+        transition-duration: 2s;
+    }
+    .front_title {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        height: 14vh;
+        width: 75vw;
+        left: 50%;
+        top: -5%;
+        transform: translate(-50%);
+        transition-duration: 2s;
+    }
+    .front_email {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        height: 7vh;
+        width: 75vw;
+        left: 50%;
+        top: -8%;
+        transform: translate(-50%);
+        transition-duration: 2s;
+    }
+
+    .front_name > span {
+        flex-grow: 1;
+        font-size: 5em;
+    }
+
+    .front_title > span {
+        flex-grow: 1;
+        font-size: 2.75em;
+    }
+
+    .front_email > span {
+        flex-grow: 1;
+        font-size: 1em;
+    }
+
 }
 
 @media screen and (min-width: 800px) {
@@ -641,7 +689,6 @@ input {
     input {
         width: 95%;
     }
-
 }
 @media all and (orientation:portrait) {
     .skills_container {
@@ -738,5 +785,55 @@ input {
         left: 205px;
         z-index: 1;
     }
+    .front_name {
+        position: relative;
+        display: flex;
+        flex-direction:row;
+        height: 9vh;
+        width:75vw;
+        left: 50%;
+        top: 20%;
+        transform: translate(-50%);
+        transition-duration: 2s;
+    }
+    .front_title {
+        position: relative;
+        display: flex;
+        flex-direction:row;
+        height: 7vh;
+        width:75vw;
+        left: 50%;
+        top: 15%;
+        transform: translate(-50%);
+        transition-duration: 2s;
+    }
+
+    .front_email {
+        position: relative;
+        display: flex;
+        flex-direction:row;
+        height: 7vh;
+        width:75vw;
+        left: 50%;
+        top: 10%;
+        transform: translate(-50%);
+        transition-duration: 2s;
+    }
+
+    .front_name > span {
+        flex-grow: 1;
+        font-size: 3em;
+    }
+
+    .front_title > span {
+        flex-grow: 1;
+        font-size: 1.5em;
+    }
+
+    .front_email > span {
+        flex-grow: 1;
+        font-size: 0.75em;
+    }
+
 }
 
