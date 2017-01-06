@@ -234,12 +234,12 @@ body {
     height:100%;
     width: 100%;
     border-radius: 5px;
-    -webkit-transition-duration: 2s;
-    -moz-transition-duration: 2s;
-    -ms-transition-duration: 2s;
-    -o-transition-duration: 2s;
-    transition-duration: 2s;
-    filter: blur(8px);
+    /*-webkit-transition-duration: 2s;*/
+    /*-moz-transition-duration: 2s;*/
+    /*-ms-transition-duration: 2s;*/
+    /*-o-transition-duration: 2s;*/
+    /*transition-duration: 2s;*/
+    /*filter: blur(8px);*/
 }
 
 .experience img.unblur {
